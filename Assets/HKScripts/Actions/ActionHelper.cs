@@ -1,0 +1,641 @@
+using System;
+using UnityEngine;
+
+namespace HutongGames.PlayMaker
+{
+	public static class ActionHelpers
+	{
+		public static Texture2D WhiteTexture
+		{
+			get
+			{
+				return Texture2D.whiteTexture;
+			}
+		}
+
+		public static Color BlendColor(ColorBlendMode blendMode, Color c1, Color c2)
+		{
+			switch (blendMode)
+			{
+			case ColorBlendMode.Normal:
+				return Color.Lerp(c1, c2, c2.a);
+			case ColorBlendMode.Multiply:
+				return Color.Lerp(c1, c1 * c2, c2.a);
+			case ColorBlendMode.Screen:
+			{
+				Color b = Color.white - (Color.white - c1) * (Color.white - c2);
+				return Color.Lerp(c1, b, c2.a);
+			}
+			default:
+				throw new ArgumentOutOfRangeException();
+			}
+		}
+
+		public static bool IsVisible(GameObject go)
+		{
+			if (go == null)
+			{
+				return false;
+			}
+			Renderer component = go.GetComponent<Renderer>();
+			return component != null && component.isVisible;
+		}
+
+		public static GameObject GetOwnerDefault(FsmStateAction action, FsmOwnerDefault ownerDefault)
+		{
+			return action.Fsm.GetOwnerDefaultTarget(ownerDefault);
+		}
+
+		public static PlayMakerFSM GetGameObjectFsm(GameObject go, string fsmName)
+		{
+			if (!string.IsNullOrEmpty(fsmName))
+			{
+				foreach (PlayMakerFSM playMakerFSM in go.GetComponents<PlayMakerFSM>())
+				{
+					if (playMakerFSM.FsmName == fsmName)
+					{
+						return playMakerFSM;
+					}
+				}
+				Debug.LogWarning("Could not find FSM: " + fsmName);
+			}
+			return go.GetComponent<PlayMakerFSM>();
+		}
+
+		public static int GetRandomWeightedIndex(FsmFloat[] weights)
+		{
+			float num = 0f;
+			foreach (FsmFloat fsmFloat in weights)
+			{
+				num += fsmFloat.Value;
+			}
+			float num2 = UnityEngine.Random.Range(0f, num);
+			for (int j = 0; j < weights.Length; j++)
+			{
+				if (num2 < weights[j].Value)
+				{
+					return j;
+				}
+				num2 -= weights[j].Value;
+			}
+			return -1;
+		}
+
+		public static void AddAnimationClip(GameObject go, AnimationClip animClip)
+		{
+			if (animClip == null)
+			{
+				return;
+			}
+			Animation component = go.GetComponent<Animation>();
+			if (component != null)
+			{
+				component.AddClip(animClip, animClip.name);
+			}
+		}
+
+		public static bool HasAnimationFinished(AnimationState anim, float prevTime, float currentTime)
+		{
+			return anim.wrapMode != WrapMode.Loop && anim.wrapMode != WrapMode.PingPong && (((anim.wrapMode == WrapMode.Default || anim.wrapMode == WrapMode.Once) && prevTime > 0f && currentTime.Equals(0f)) || (prevTime < anim.length && currentTime >= anim.length));
+		}
+
+		public static Vector3 GetPosition(FsmGameObject fsmGameObject, FsmVector3 fsmVector3)
+		{
+			Vector3 result;
+			if (fsmGameObject.Value != null)
+			{
+				result = ((!fsmVector3.IsNone) ? fsmGameObject.Value.transform.TransformPoint(fsmVector3.Value) : fsmGameObject.Value.transform.position);
+			}
+			else
+			{
+				result = fsmVector3.Value;
+			}
+			return result;
+		}
+
+		public static Quaternion GetTargetRotation(RotationOptions option, Transform owner, Transform target, Vector3 rotation)
+		{
+			if (owner == null)
+			{
+				return Quaternion.identity;
+			}
+			switch (option)
+			{
+			case RotationOptions.CurrentRotation:
+				return owner.rotation;
+			case RotationOptions.WorldRotation:
+				return Quaternion.Euler(rotation);
+			case RotationOptions.LocalRotation:
+				if (owner.parent == null)
+				{
+					return Quaternion.Euler(rotation);
+				}
+				return owner.parent.rotation * Quaternion.Euler(rotation);
+			case RotationOptions.WorldOffsetRotation:
+				return Quaternion.Euler(rotation) * owner.rotation;
+			case RotationOptions.LocalOffsetRotation:
+				return owner.rotation * Quaternion.Euler(rotation);
+			case RotationOptions.MatchGameObjectRotation:
+				if (target == null)
+				{
+					return owner.rotation;
+				}
+				return target.rotation * Quaternion.Euler(rotation);
+			default:
+				throw new ArgumentOutOfRangeException();
+			}
+		}
+
+		public static bool GetTargetRotation(RotationOptions option, Transform owner, FsmVector3 rotation, FsmGameObject target, out Quaternion targetRotation)
+		{
+			targetRotation = Quaternion.identity;
+			if (owner == null || !ActionHelpers.CanEditTargetRotation(option, rotation, target))
+			{
+				return false;
+			}
+			targetRotation = ActionHelpers.GetTargetRotation(option, owner, (target.Value != null) ? target.Value.transform : null, rotation.Value);
+			return true;
+		}
+
+		private static bool CanEditTargetRotation(RotationOptions option, NamedVariable rotation, FsmGameObject target)
+		{
+			switch (option)
+			{
+			case RotationOptions.CurrentRotation:
+				return false;
+			case RotationOptions.WorldRotation:
+			case RotationOptions.LocalRotation:
+			case RotationOptions.WorldOffsetRotation:
+			case RotationOptions.LocalOffsetRotation:
+				return !rotation.IsNone;
+			case RotationOptions.MatchGameObjectRotation:
+				return target.Value != null;
+			default:
+				throw new ArgumentOutOfRangeException();
+			}
+		}
+
+		public static Vector3 GetTargetScale(ScaleOptions option, Transform owner, Transform target, Vector3 scale)
+		{
+			if (owner == null)
+			{
+				return Vector3.one;
+			}
+			switch (option)
+			{
+			case ScaleOptions.CurrentScale:
+				return owner.localScale;
+			case ScaleOptions.LocalScale:
+				return scale;
+			case ScaleOptions.MultiplyScale:
+				return new Vector3(owner.localScale.x * scale.x, owner.localScale.y * scale.y, owner.localScale.z * scale.z);
+			case ScaleOptions.AddToScale:
+				return new Vector3(owner.localScale.x + scale.x, owner.localScale.y + scale.y, owner.localScale.z + scale.z);
+			case ScaleOptions.MatchGameObject:
+				if (target == null)
+				{
+					return owner.localScale;
+				}
+				return target.localScale;
+			default:
+				return owner.localScale;
+			}
+		}
+
+		public static bool GetTargetPosition(PositionOptions option, Transform owner, FsmVector3 position, FsmGameObject target, out Vector3 targetPosition)
+		{
+			targetPosition = Vector3.zero;
+			if (owner == null || !ActionHelpers.IsValidTargetPosition(option, position, target))
+			{
+				return false;
+			}
+			targetPosition = ActionHelpers.GetTargetPosition(option, owner, (target != null && target.Value != null) ? target.Value.transform : null, position.Value);
+			return true;
+		}
+
+		private static bool IsValidTargetPosition(PositionOptions option, NamedVariable position, FsmGameObject target)
+		{
+			switch (option)
+			{
+			case PositionOptions.CurrentPosition:
+				return true;
+			case PositionOptions.WorldPosition:
+			case PositionOptions.LocalPosition:
+			case PositionOptions.WorldOffset:
+			case PositionOptions.LocalOffset:
+				return !position.IsNone;
+			case PositionOptions.TargetGameObject:
+				return target.Value != null;
+			default:
+				throw new ArgumentOutOfRangeException();
+			}
+		}
+
+		public static bool CanEditTargetPosition(PositionOptions option, NamedVariable position, FsmGameObject target)
+		{
+			switch (option)
+			{
+			case PositionOptions.CurrentPosition:
+				return false;
+			case PositionOptions.WorldPosition:
+			case PositionOptions.LocalPosition:
+			case PositionOptions.WorldOffset:
+			case PositionOptions.LocalOffset:
+				return !position.IsNone;
+			case PositionOptions.TargetGameObject:
+				return target.Value != null;
+			default:
+				throw new ArgumentOutOfRangeException();
+			}
+		}
+
+		public static Vector3 GetTargetPosition(PositionOptions option, Transform owner, Transform target, Vector3 position)
+		{
+			if (owner == null)
+			{
+				return Vector3.zero;
+			}
+			switch (option)
+			{
+			case PositionOptions.CurrentPosition:
+				return owner.position;
+			case PositionOptions.WorldPosition:
+				return position;
+			case PositionOptions.LocalPosition:
+				if (owner.parent == null)
+				{
+					return position;
+				}
+				return owner.parent.TransformPoint(position);
+			case PositionOptions.WorldOffset:
+				return owner.position + position;
+			case PositionOptions.LocalOffset:
+				return owner.TransformPoint(position);
+			case PositionOptions.TargetGameObject:
+				if (target == null)
+				{
+					return owner.position;
+				}
+				if (position != Vector3.zero)
+				{
+					return target.TransformPoint(position);
+				}
+				return target.position;
+			default:
+				throw new ArgumentOutOfRangeException();
+			}
+		}
+
+		public static bool IsMouseOver(GameObject gameObject, float distance, int layerMask)
+		{
+			return !(gameObject == null) && gameObject == ActionHelpers.MouseOver(distance, layerMask);
+		}
+
+		public static RaycastHit MousePick(float distance, int layerMask)
+		{
+			if (!ActionHelpers.mousePickRaycastTime.Equals((float)Time.frameCount) || ActionHelpers.mousePickDistanceUsed < distance || ActionHelpers.mousePickLayerMaskUsed != layerMask)
+			{
+				ActionHelpers.DoMousePick(distance, layerMask);
+			}
+			return ActionHelpers.mousePickInfo;
+		}
+
+		public static GameObject MouseOver(float distance, int layerMask)
+		{
+			if (!ActionHelpers.mousePickRaycastTime.Equals((float)Time.frameCount) || ActionHelpers.mousePickDistanceUsed < distance || ActionHelpers.mousePickLayerMaskUsed != layerMask)
+			{
+				ActionHelpers.DoMousePick(distance, layerMask);
+			}
+			if (ActionHelpers.mousePickInfo.collider != null && ActionHelpers.mousePickInfo.distance < distance)
+			{
+				return ActionHelpers.mousePickInfo.collider.gameObject;
+			}
+			return null;
+		}
+
+		private static void DoMousePick(float distance, int layerMask)
+		{
+			if (Camera.main == null)
+			{
+				return;
+			}
+			Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out ActionHelpers.mousePickInfo, distance, layerMask);
+			ActionHelpers.mousePickLayerMaskUsed = layerMask;
+			ActionHelpers.mousePickDistanceUsed = distance;
+			ActionHelpers.mousePickRaycastTime = (float)Time.frameCount;
+		}
+
+		public static int LayerArrayToLayerMask(FsmInt[] layers, bool invert)
+		{
+			int num = 0;
+			foreach (FsmInt fsmInt in layers)
+			{
+				num |= 1 << fsmInt.Value;
+			}
+			if (invert)
+			{
+				num = ~num;
+			}
+			if (num != 0)
+			{
+				return num;
+			}
+			return -5;
+		}
+
+		public static bool IsLoopingWrapMode(WrapMode wrapMode)
+		{
+			return wrapMode == WrapMode.Loop || wrapMode == WrapMode.PingPong;
+		}
+
+		public static string CheckRayDistance(float rayDistance)
+		{
+			if (rayDistance > 0f)
+			{
+				return "";
+			}
+			return "Ray Distance should be greater than zero!\n";
+		}
+
+		public static string CheckForValidEvent(FsmState state, string eventName)
+		{
+			if (state == null)
+			{
+				return "Invalid State!";
+			}
+			if (string.IsNullOrEmpty(eventName))
+			{
+				return "";
+			}
+			FsmTransition[] array = state.Fsm.GlobalTransitions;
+			for (int i = 0; i < array.Length; i++)
+			{
+				if (array[i].EventName == eventName)
+				{
+					return "";
+				}
+			}
+			array = state.Transitions;
+			for (int i = 0; i < array.Length; i++)
+			{
+				if (array[i].EventName == eventName)
+				{
+					return "";
+				}
+			}
+			return "Fsm will not respond to Event: " + eventName;
+		}
+
+		public static string CheckPhysicsSetup(FsmOwnerDefault ownerDefault)
+		{
+			if (ownerDefault == null)
+			{
+				return "";
+			}
+			return ActionHelpers.CheckPhysicsSetup(ownerDefault.GameObject.Value);
+		}
+
+		public static string CheckOwnerPhysicsSetup(GameObject gameObject)
+		{
+			return ActionHelpers.CheckPhysicsSetup(gameObject);
+		}
+
+		public static string CheckPhysicsSetup(GameObject gameObject)
+		{
+			string text = string.Empty;
+			if (gameObject != null && gameObject.GetComponent<Collider>() == null && gameObject.GetComponent<Rigidbody>() == null)
+			{
+				text += "GameObject requires RigidBody/Collider!\n";
+			}
+			return text;
+		}
+
+		public static string CheckPhysics2dSetup(FsmOwnerDefault ownerDefault)
+		{
+			if (ownerDefault == null)
+			{
+				return "";
+			}
+			return ActionHelpers.CheckPhysics2dSetup(ownerDefault.GameObject.Value);
+		}
+
+		public static string CheckOwnerPhysics2dSetup(GameObject gameObject)
+		{
+			return ActionHelpers.CheckPhysics2dSetup(gameObject);
+		}
+
+		public static string CheckPhysics2dSetup(GameObject gameObject)
+		{
+			string text = string.Empty;
+			if (gameObject != null && gameObject.GetComponent<Collider2D>() == null && gameObject.GetComponent<Rigidbody2D>() == null)
+			{
+				text += "GameObject requires a RigidBody2D or Collider2D component!\n";
+			}
+			return text;
+		}
+
+		public static void DebugLog(Fsm fsm, LogLevel logLevel, string text, bool sendToUnityLog = false)
+		{
+			if (!Application.isEditor && sendToUnityLog)
+			{
+				string message = ActionHelpers.FormatUnityLogString(text);
+				if (logLevel != LogLevel.Warning)
+				{
+					if (logLevel != LogLevel.Error)
+					{
+						Debug.Log(message);
+					}
+					else
+					{
+						Debug.LogError(message);
+					}
+				}
+				else
+				{
+					Debug.LogWarning(message);
+				}
+			}
+			if (!FsmLog.LoggingEnabled || fsm == null)
+			{
+				return;
+			}
+			switch (logLevel)
+			{
+			case LogLevel.Info:
+				fsm.MyLog.LogAction(FsmLogType.Info, text, sendToUnityLog);
+				return;
+			case LogLevel.Warning:
+				fsm.MyLog.LogAction(FsmLogType.Warning, text, sendToUnityLog);
+				return;
+			case LogLevel.Error:
+				fsm.MyLog.LogAction(FsmLogType.Error, text, sendToUnityLog);
+				return;
+			default:
+				return;
+			}
+		}
+
+		public static void LogError(string text)
+		{
+			ActionHelpers.DebugLog(FsmExecutionStack.ExecutingFsm, LogLevel.Error, text, true);
+		}
+
+		public static void LogWarning(string text)
+		{
+			ActionHelpers.DebugLog(FsmExecutionStack.ExecutingFsm, LogLevel.Warning, text, true);
+		}
+
+		public static string FormatUnityLogString(string text)
+		{
+			if (FsmExecutionStack.ExecutingFsm == null)
+			{
+				return text;
+			}
+			string str = Fsm.GetFullFsmLabel(FsmExecutionStack.ExecutingFsm);
+			if (FsmExecutionStack.ExecutingState != null)
+			{
+				str = str + " : " + FsmExecutionStack.ExecutingStateName;
+			}
+			if (FsmExecutionStack.ExecutingAction != null)
+			{
+				str += FsmExecutionStack.ExecutingAction.Name;
+			}
+			return str + " : " + text;
+		}
+
+		public static string GetValueLabel(INamedVariable variable)
+		{
+			return "";
+		}
+
+		public static string GetValueLabel(Fsm fsm, FsmOwnerDefault ownerDefault)
+		{
+			if (ownerDefault == null)
+			{
+				return "[null]";
+			}
+			if (ownerDefault.OwnerOption == OwnerDefaultOption.UseOwner)
+			{
+				return "Owner";
+			}
+			return ActionHelpers.GetValueLabel(ownerDefault.GameObject);
+		}
+
+		public static string AutoName(FsmStateAction action, params INamedVariable[] exposedFields)
+		{
+			if (action != null)
+			{
+				return ActionHelpers.AutoName(action.GetType().Name, exposedFields);
+			}
+			return null;
+		}
+
+		public static string AutoName(string actionName, params INamedVariable[] exposedFields)
+		{
+			string text = actionName + " :";
+			foreach (INamedVariable variable in exposedFields)
+			{
+				text = text + " " + ActionHelpers.GetValueLabel(variable);
+			}
+			return text;
+		}
+
+		public static string AutoNameRange(FsmStateAction action, NamedVariable min, NamedVariable max)
+		{
+			if (action != null)
+			{
+				return ActionHelpers.AutoNameRange(action.GetType().Name, min, max);
+			}
+			return null;
+		}
+
+		public static string AutoNameRange(string actionName, NamedVariable min, NamedVariable max)
+		{
+			return string.Concat(new string[]
+			{
+				actionName,
+				" : ",
+				ActionHelpers.GetValueLabel(min),
+				" - ",
+				ActionHelpers.GetValueLabel(max)
+			});
+		}
+
+		public static string AutoNameSetVar(FsmStateAction action, NamedVariable var, NamedVariable value)
+		{
+			if (action != null)
+			{
+				return ActionHelpers.AutoNameSetVar(action.GetType().Name, var, value);
+			}
+			return null;
+		}
+
+		public static string AutoNameSetVar(string actionName, NamedVariable var, NamedVariable value)
+		{
+			return string.Concat(new string[]
+			{
+				actionName,
+				" : ",
+				ActionHelpers.GetValueLabel(var),
+				" = ",
+				ActionHelpers.GetValueLabel(value)
+			});
+		}
+
+		public static string AutoNameConvert(FsmStateAction action, NamedVariable fromVariable, NamedVariable toVariable)
+		{
+			if (action != null)
+			{
+				return ActionHelpers.AutoNameConvert(action.GetType().Name, fromVariable, toVariable);
+			}
+			return null;
+		}
+
+		public static string AutoNameConvert(string actionName, NamedVariable fromVariable, NamedVariable toVariable)
+		{
+			return string.Concat(new string[]
+			{
+				actionName.Replace("Convert", ""),
+				" : ",
+				ActionHelpers.GetValueLabel(fromVariable),
+				" to ",
+				ActionHelpers.GetValueLabel(toVariable)
+			});
+		}
+
+		public static string AutoNameGetProperty(FsmStateAction action, NamedVariable property, NamedVariable store)
+		{
+			if (action != null)
+			{
+				return ActionHelpers.AutoNameGetProperty(action.GetType().Name, property, store);
+			}
+			return null;
+		}
+
+		public static string AutoNameGetProperty(string actionName, NamedVariable property, NamedVariable store)
+		{
+			return string.Concat(new string[]
+			{
+				actionName,
+				" : ",
+				ActionHelpers.GetValueLabel(property),
+				" -> ",
+				ActionHelpers.GetValueLabel(store)
+			});
+		}
+
+		[Obsolete("Use LogError instead.")]
+		public static void RuntimeError(FsmStateAction action, string error)
+		{
+			action.LogError(((action != null) ? action.ToString() : null) + " : " + error);
+		}
+
+		public static RaycastHit mousePickInfo;
+
+		private static float mousePickRaycastTime;
+
+		private static float mousePickDistanceUsed;
+
+		private static int mousePickLayerMaskUsed;
+	}
+}

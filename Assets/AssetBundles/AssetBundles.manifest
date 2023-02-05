@@ -1,0 +1,11 @@
+ManifestFileVersion: 0
+CRC: 569028558
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: dcqueen
+      Dependencies: {}
+    Info_1:
+      Name: queenscene
+      Dependencies:
+        Dependency_0: dcqueen
