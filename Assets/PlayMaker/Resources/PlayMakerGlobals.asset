@@ -61,4 +61,8 @@ MonoBehaviour:
     categories:
     - 
     variableCategoryIDs: 0000000000000000000000000000000000000000
-  events: []
+  events:
+  - QUEEN START MASSIVE
+  - QUEEN START BD
+  - QUEEN START BD TO HERO
+  - FORCE LUNGE

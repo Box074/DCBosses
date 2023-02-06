@@ -1,11 +1,7 @@
 ManifestFileVersion: 0
-CRC: 569028558
+CRC: 2304786705
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: dcqueen
-      Dependencies: {}
-    Info_1:
       Name: queenscene
-      Dependencies:
-        Dependency_0: dcqueen
+      Dependencies: {}

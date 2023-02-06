@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 45967000941698519}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 973588164448554725}
   m_RootOrder: 1
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433442567159573490}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad9281b8789537443915f83994f69d99, type: 3}
   m_Name: 
@@ -153,7 +153,7 @@ Transform:
   m_GameObject: {fileID: 2268798128452704980}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 973588164448554725}
   m_RootOrder: 0
@@ -195,9 +195,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -349214895
+  m_SortingLayer: 12
+  m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: d09957c122d8c1a4d92b90816bb2be16, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -251,19 +251,27 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 50
+        x: 114
         y: 100
-        width: 100
-        height: 32
+        width: 175
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
+          name: QUEEN MCL PLAY
+          isSystemEvent: 0
           isGlobal: 0
         toState: Play
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: QUEEN MCL PLAY LAST
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Set Last
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -368,7 +376,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - FINISHED
+        - QUEEN MCL PLAY
         byteData: 000000
         arrayParamSizes: 
         arrayParamTypes: []
@@ -397,7 +405,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 302
+        x: 366
         y: 118
         width: 160
         height: 32
@@ -457,7 +465,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 689
+        x: 753
         y: 122
         width: 100
         height: 32
@@ -585,7 +593,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 163
+        x: 227
         y: 203
         width: 100
         height: 32
@@ -678,7 +686,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 646
+        x: 710
         y: 198
         width: 100
         height: 32
@@ -695,12 +703,16 @@ MonoBehaviour:
         linkConstraint: 0
         colorIndex: 0
       actionData:
-        actionNames: []
-        customNames: []
-        actionEnabled: 
-        actionIsOpen: 
-        actionStartIndex: 
-        actionHashCodes: 
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        - HutongGames.PlayMaker.Actions.DestroySelf
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000004000000
+        actionHashCodes: a4c8bf0062f95203
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -717,22 +729,118 @@ MonoBehaviour:
         fsmEnumParams: []
         fsmFloatParams: []
         fsmIntParams: []
-        fsmBoolParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: shouldDestroy
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        - FINISHED
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1100000017000000170000000100000011000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        - detachChildren
+        paramDataPos: 0000000000000000010000000000000001000000
+        paramByteDataSize: 0000000000000000000000000100000000000000
+    - name: Set Last
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 60
+        y: 225
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Play
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetBoolValue
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 27fbe103
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: shouldDestroy
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 
+        byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 
-        paramName: []
-        paramDataPos: 
-        paramByteDataSize: 
+        paramDataType: 110000001100000001000000
+        paramName:
+        - boolVariable
+        - boolValue
+        - everyFrame
+        paramDataPos: 000000000100000000000000
+        paramByteDataSize: 000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -743,11 +851,26 @@ MonoBehaviour:
     - name: MC STOP
       isSystemEvent: 0
       isGlobal: 0
+    - name: QUEEN MCL PLAY
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: QUEEN MCL PLAY LAST
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: READY
+      isSystemEvent: 0
+      isGlobal: 0
     globalTransitions: []
     variables:
       floatVariables: []
       intVariables: []
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: shouldDestroy
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       stringVariables: []
       vector2Variables: []
       vector3Variables: []
@@ -762,7 +885,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 
+      variableCategoryIDs: 00000000
     description: 
     docUrl: 
     showStateLabel: 0

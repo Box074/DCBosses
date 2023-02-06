@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2868289493
+CRC: 1440635647
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 53deecf52d22b77c0910fc909e66396b
+    Hash: 80ee0314a5dc6468091072c5fe02a4ec
   TypeTreeHash:
     serializedVersion: 2
-    Hash: a6c5385d44bedda06a9c03f97c729676
+    Hash: d7120759c8a024f94663ee72d2c23d4d
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -42,7 +42,9 @@ ClassTypes:
 - Class: 104
   Script: {instanceID: 0}
 - Class: 114
-  Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  Script: {fileID: 11500000, guid: 696e7109bb262864880633b5f59f1acb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: af62ef6cc8ab6ac468dc4a03aa6ca2ab, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: e202b5714d91c1e4ead0833ffaae3fbe, type: 3}
 - Class: 114
@@ -52,6 +54,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: ef21613fb1e43384ea47d2b1e34d7653, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: af668bb046df3fa4bab1b69b24b7d943, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: fb816f5dd8b6ff24ea0aa1d915c718ff, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 993b45a54196c13449fdbfb80accc828, type: 3}
@@ -60,19 +64,15 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: a82ad7d8c20626a47b24daa74745b7e6, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 5434678422d258649a39cffd22ceca90, type: 3}
+- Class: 114
+  Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+- Class: 114
   Script: {fileID: -501658088, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
 - Class: 114
   Script: {fileID: -1043544612, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: a7c4ea097418a464e824fe3901489132, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 5434678422d258649a39cffd22ceca90, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 696e7109bb262864880633b5f59f1acb, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: af668bb046df3fa4bab1b69b24b7d943, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: af62ef6cc8ab6ac468dc4a03aa6ca2ab, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 157
@@ -88,5 +88,4 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Scenes/Queen/QueenScene.unity
-Dependencies:
-- I:/DCBosses/Assets/AssetBundles/dcqueen
+Dependencies: []
