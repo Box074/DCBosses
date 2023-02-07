@@ -57,3 +57,16 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+#Project File
+*.sln
+*.csproj
+
+#Output
+/Output/
+Output.zip
+Info.txt
+
+#Cache
+/caches/
+projectCache.json

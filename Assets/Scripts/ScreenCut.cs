@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ScreenCut : MonoBehaviour
 {
+    
     public Material mat;
     private float _startTime;
     private bool isExit;
@@ -23,7 +24,7 @@ public class ScreenCut : MonoBehaviour
         _startTime = Time.time;
     }
     private void Start() {
-        mat = new Material(Shader.Find("DC/CutScreen"));
+        //mat ??= new Material(Shader.Find("DC/CutScreen"));
     }
     private void OnRenderImage(RenderTexture src, RenderTexture dest) {
         if(bindObj == null)
@@ -38,7 +39,7 @@ public class ScreenCut : MonoBehaviour
             return;
         }
         var scale = Mathf.Clamp(Time.time - _startTime, 0f, 1f);
-        
+
         if(isExit) scale = 1 - scale;
         var border = new Vector4();
         border.y = cutWidth * scale;

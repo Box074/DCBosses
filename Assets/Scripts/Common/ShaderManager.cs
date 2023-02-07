@@ -6,22 +6,30 @@ using UnityEngine.UI;
 public class ShaderManager : MonoBehaviour
 {
     public Material mat;
-    private void Awake()
+    
+    private void OnEnable()
     {
+        bool Test(Material mat)
+        {
+            if(mat == null) return false;
+            if(mat.shader == null) return false;
+            if(!mat.shader.isSupported) return false;
+            if(mat.shader.name.Contains("InternalErrorShader")) return false;
+            return true;
+        }
         if (mat == null)
         {
             mat = new Material(Shader.Find("Sprites/Default"));
         }
         foreach (var v in GetComponents<Renderer>())
         {
-            if (v.sharedMaterial == null || v.material == null) v.material = v.sharedMaterial = mat;
+            if (!Test(v.sharedMaterial) && !Test(v.material)) v.sharedMaterial = mat;
         }
         foreach (var v in GetComponentsInChildren<Renderer>(true))
         {
-            if (v.sharedMaterial == null)
+            if (!Test(v.sharedMaterial) && !Test(v.material))
             {
-                
-                v.material = v.sharedMaterial = mat;
+                v.sharedMaterial = mat;
             }
         }
     }

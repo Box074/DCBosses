@@ -439,7 +439,7 @@ PolygonCollider2D:
       - {x: -4.841234, y: 0.40389946}
       - {x: -3.117982, y: -0.7141346}
       - {x: 1.0305697, y: 0.1714344}
-      - {x: 4.4830875, y: 1.8220685}
+      - {x: 4.963167, y: 0.061778307}
       - {x: 6.738881, y: 4.8001165}
 --- !u!114 &5140446709762567359
 MonoBehaviour:
@@ -480,7 +480,7 @@ GameObject:
   - component: {fileID: 729413238794873163}
   - component: {fileID: 7016240278990320897}
   - component: {fileID: 8268684191477195444}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: CameraLock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +533,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -11.200066, y: 2.7019615}
+  m_Offset: {x: -3.93087, y: 2.7019615}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -544,7 +544,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 57.654015, y: 21.569767}
+  m_Size: {x: 72.19241, y: 21.569767}
   m_EdgeRadius: 0
 --- !u!1 &3816288573508076112
 GameObject:
@@ -572,6 +572,7 @@ GameObject:
   - component: {fileID: 7758931282367073183}
   - component: {fileID: 4711875441857762418}
   - component: {fileID: 5226894134570507388}
+  - component: {fileID: 5217443248330607229}
   m_Layer: 11
   m_Name: QueenBoss
   m_TagString: Boss
@@ -746,14 +747,12 @@ MonoBehaviour:
         linkConstraint: 0
         colorIndex: 0
       actionData:
-        actionNames:
-        - GetOrAddScreenCut
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 1cdb2302
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -764,14 +763,7 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
-        fsmObjectParams:
-        - useVariable: 1
-          name: Cut Screen Cam
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          typeName: ScreenCut
-          value: {fileID: 0}
+        fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -789,11 +781,10 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 18000000
-        paramName:
-        - result
-        paramDataPos: 00000000
-        paramByteDataSize: 00000000
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     - name: Dash Start
       description: 
       colorIndex: 0
@@ -8283,15 +8274,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioPlayerPrefab: {fileID: 0}
-  blockHitPrefab: {fileID: 0}
-  strikeNailPrefab: {fileID: 0}
-  slashImpactPrefab: {fileID: 0}
-  fireballHitPrefab: {fileID: 0}
-  sharpShadowImpactPrefab: {fileID: 0}
-  corpseSplatPrefab: {fileID: 0}
-  smallGeoPrefab: {fileID: 0}
-  mediumGeoPrefab: {fileID: 0}
-  largeGeoPrefab: {fileID: 0}
+  blockHitPrefab: {fileID: 5696019568416323166, guid: 70ec7f84d4fe78646ad3ead955c4451f, type: 3}
+  strikeNailPrefab: {fileID: 5696019568416323166, guid: 70ec7f84d4fe78646ad3ead955c4451f, type: 3}
+  slashImpactPrefab: {fileID: 5696019568416323166, guid: 70ec7f84d4fe78646ad3ead955c4451f, type: 3}
+  fireballHitPrefab: {fileID: 5696019568416323166, guid: 70ec7f84d4fe78646ad3ead955c4451f, type: 3}
+  sharpShadowImpactPrefab: {fileID: 5696019568416323166, guid: 70ec7f84d4fe78646ad3ead955c4451f, type: 3}
+  corpseSplatPrefab: {fileID: 5696019568416323166, guid: 70ec7f84d4fe78646ad3ead955c4451f, type: 3}
+  smallGeoPrefab: {fileID: 5696019568416323166, guid: 70ec7f84d4fe78646ad3ead955c4451f, type: 3}
+  mediumGeoPrefab: {fileID: 5696019568416323166, guid: 70ec7f84d4fe78646ad3ead955c4451f, type: 3}
+  largeGeoPrefab: {fileID: 5696019568416323166, guid: 70ec7f84d4fe78646ad3ead955c4451f, type: 3}
   hp: 2500
   enemyType: 0
   effectOrigin: {x: 0, y: 0, z: 0}
@@ -10836,9 +10827,10 @@ MonoBehaviour:
         - 
         actionEnabled: 0101010101010101
         actionIsOpen: 0101010101010101
-        actionStartIndex: 0000000001000000080000000c0000000e000000120000001400000017000000
-        actionHashCodes: 1cdb23025552ad052a6e8a005ac852042a6e8a005ac8520448c01101c34b4105
-        unityObjectParams: []
+        actionStartIndex: 0000000002000000090000000d0000000f000000130000001500000018000000
+        actionHashCodes: 9a0df1025552ad052a6e8a005ac852042a6e8a005ac8520448c01101c34b4105
+        unityObjectParams:
+        - {fileID: 4800000, guid: 138f8887f8850ae4a94a64799147d33b, type: 3}
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
         - ownerOption: 0
@@ -11226,9 +11218,10 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 18000000140000001c0000000f0000000f0000000f00000007000000010000000f0000000f000000010000000100000024000000010000000f0000000f000000010000000100000024000000010000000f00000017000000010000001400000012000000100000000f00000001000000
+        paramDataType: 1800000005000000140000001c0000000f0000000f0000000f00000007000000010000000f0000000f000000010000000100000024000000010000000f0000000f000000010000000100000024000000010000000f00000017000000010000001400000012000000100000000f00000001000000
         paramName:
         - result
+        - shader
         - gameObject
         - vector
         - x
@@ -11256,8 +11249,8 @@ MonoBehaviour:
         - layer
         - normalizedTime
         - everyFrame
-        paramDataPos: 000000000000000000000000000000000100000002000000000000000400000003000000040000000500000006000000000000000700000005000000060000000800000009000000010000000a00000007000000000000000b000000010000000000000000000000080000000c000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000004000000010000000000000000000000010000000100000000000000010000000000000000000000010000000100000000000000010000000000000000000000010000000000000000000000000000000000000001000000
+        paramDataPos: 00000000000000000000000000000000000000000100000002000000000000000400000003000000040000000500000006000000000000000700000005000000060000000800000009000000010000000a00000007000000000000000b000000010000000000000000000000080000000c000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000004000000010000000000000000000000010000000100000000000000010000000000000000000000010000000100000000000000010000000000000000000000010000000000000000000000000000000000000001000000
     - name: Intro
       description: 
       colorIndex: 0
@@ -14028,6 +14021,19 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &5217443248330607229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3816288573508076112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993b45a54196c13449fdbfb80accc828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 0}
 --- !u!1 &4155645162785288351
 GameObject:
   m_ObjectHideFlags: 0
@@ -14070,6 +14076,7 @@ GameObject:
   - component: {fileID: 8824685062531227984}
   - component: {fileID: 19734861919413579}
   - component: {fileID: 1818021476287262889}
+  - component: {fileID: 631318697250236364}
   m_Layer: 11
   m_Name: Hit Lunge
   m_TagString: Untagged
@@ -14137,6 +14144,18 @@ MonoBehaviour:
   hazardType: 1
   shadowDashHazard: 0
   resetOnEnable: 0
+--- !u!114 &631318697250236364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4819580318464015638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af668bb046df3fa4bab1b69b24b7d943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4843404727534053276
 GameObject:
   m_ObjectHideFlags: 0
