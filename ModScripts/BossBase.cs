@@ -3,16 +3,27 @@ namespace DCBossesMod;
 
 abstract class BossBase
 {
+    public enum ImplMode
+    {
+        None,
+        Debug,
+        Public
+    }
     public abstract void ModifyStatue(BossStatue statue);
     public abstract string Name { get; }
     public abstract string PrefabStatueName { get; }
     public abstract string BossSceneName { get; }
-    public abstract bool IsImpl { get; }
+    public abstract string NameKey { get; }
+    public abstract string DescKey { get; }
+    public abstract string LockedKey { get; }
+    public abstract ImplMode Impl { get; }
     public abstract void Init();
     public abstract void ModifyBossScene(Scene scene, SceneManager sceneManager, BossSceneController ctrl);
     public abstract Vector2 StatuePos { get; }
     public static List<BossBase> bosses = new() {
-        new QueenBoss()
+        new QueenBoss(),
+        new TimeKeeperBoss(),
+        
     };
 
     public static void ApplyHitEffectsUninfected(HealthManager hm)

@@ -14,12 +14,21 @@ partial class DeadCellsBosses : ModBase, ILocalSettings<Settings>
     Settings ILocalSettings<Settings>.OnSaveLocal() => settings;
     public static readonly MusicCue emptyCue = new MusicCue();
     public static EnemyHitEffectsUninfected hitEffect;
+    protected override List<(SupportedLanguages, string)> LanguagesEx => new()
+    {
+        (SupportedLanguages.ZH, "lang.zh"),
+        (SupportedLanguages.EN, "lang.en")
+    };
+    public DeadCellsBosses()
+    {
 
+    }
     public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects)
     {
         I18n.UseLanguageHook = true;
-        
-        NailParryFsm.onLoad += (NailParryFsm self) => {
+
+        NailParryFsm.onLoad += (NailParryFsm self) =>
+        {
             var fsm = self.gameObject.AddComponent<PlayMakerFSM>();
             fsm.SetFsmTemplate(fsm_nail_clash_tink);
         };
@@ -29,7 +38,7 @@ partial class DeadCellsBosses : ModBase, ILocalSettings<Settings>
 
         hitEffect = HKPrime.GetComponent<EnemyHitEffectsUninfected>();
 
-        foreach(var v in BossBase.bosses)
+        foreach (var v in BossBase.bosses)
         {
             v.Init();
         }
@@ -41,17 +50,21 @@ partial class DeadCellsBosses : ModBase, ILocalSettings<Settings>
             {
                 var pname = $"GG_Statue_DC_{v.Name}";
                 if (name != pname) continue;
-                var result =  settings.status.TryGetOrAddValue(v.Name, () =>
+                var result = settings.status.TryGetOrAddValue(v.Name, () =>
                 {
                     return new()
                     {
                         usingAltVersion = false,
-                        isUnlocked = v.IsImpl,
+                        isUnlocked = v.Impl == BossBase.ImplMode.Public,
                         hasBeenSeen = false
                     };
                 });
-                result.isUnlocked = v.IsImpl;
-                if(!v.IsImpl) 
+                result.isUnlocked = v.Impl == BossBase.ImplMode.Public;
+                if (DebugManager.IsDebug(this) && v.Impl == BossBase.ImplMode.Debug)
+                {
+                    result.isUnlocked = true;
+                }
+                if (v.Impl != BossBase.ImplMode.Public)
                 {
                     result.hasBeenSeen = false;
                 }
@@ -66,7 +79,20 @@ partial class DeadCellsBosses : ModBase, ILocalSettings<Settings>
             {
                 var pname = $"GG_Statue_DC_{v.Name}";
                 if (name != pname) continue;
-                settings.status[v.Name] = (BossStatue.Completion) orig;
+                settings.status[v.Name] = (BossStatue.Completion)orig;
+            }
+            return orig;
+        };
+        ModHooks.GetPlayerBoolHook += (name, orig) =>
+        {
+            if (!name.StartsWith("isUnlockDCBoss")) return orig;
+            foreach (var v in BossBase.bosses)
+            {
+                var pname = $"isUnlockDCBoss{v.Name}";
+                if (name != pname) continue;
+                if (v.Impl == BossBase.ImplMode.Public) return true;
+                if (v.Impl == BossBase.ImplMode.Debug && DebugManager.IsDebug(this)) return true;
+                return false;
             }
             return orig;
         };
@@ -115,9 +141,40 @@ partial class DeadCellsBosses : ModBase, ILocalSettings<Settings>
             s.statueStatePD = "statueStateDC" + v.Name;
             s.dreamBossScene = null;
             s.dreamStatueStatePD = "";
+
+            var plaqueR = sg.FindChildWithPath("Base", "Plaque", "Plaque_Trophy_Right");
+            plaqueR?.SetActive(false);
+            var plaqueL = sg.FindChildWithPath("Base", "Plaque", "Plaque_Trophy_Left");
+            plaqueL?.SetActive(false);
+            sg.FindChildWithPath("dream_version_switch")?.SetActive(false);
+
+            var sd = s.bossDetails;
+            sd.nameKey = v.NameKey;
+            sd.descriptionKey = v.DescKey;
+            s.bossDetails = sd;
+
+            var locked = sg.FindChild("Inspect_Locked").LocateMyFSM("inspect_region");
+            locked.FsmVariables.FindFsmString("Game Text Convo").Value = v.LockedKey;
+
             s.bossScene = new()
             {
-                sceneName = v.BossSceneName
+                sceneName = v.BossSceneName,
+                bossTests = new BossScene.BossTest[] {
+                    new()
+                    {
+                        boolTests = new BossScene.BossTest.BoolTest[] {
+                            new() {
+                                playerDataBool = "isUnlockDCBoss" + v.Name,
+                                value = true
+                            }
+                        },
+                        intTests = new BossScene.BossTest.IntTest[0],
+                        persistentBool = new() {
+                            id = "",
+                            sceneName = ""
+                        }
+                    }
+                }
             };
 
             v.ModifyStatue(s);

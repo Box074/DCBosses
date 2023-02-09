@@ -9,7 +9,7 @@
     "enableNullableCheck": false,
     "hktool": {
         "compressResources": true,
-        "externRes": true,
+        "externRes": false,
         "modifyIL": false,
         "modRes": {
             "ab.queen.win": {
@@ -27,10 +27,6 @@
             "script": {
                 "name": "SCRIPT_ASSEMBLY_BYTE",
                 "type": "bin"
-            },
-            "lang.zh": {
-                "name": "LANG_ZH",
-                "type": "utf8"
             },
             "icon.queen": {
                 "name": "ICON_QUEEN",
@@ -56,7 +52,8 @@
         "./Assets/AssetBundles/MacOs/queenscene": "ab.queen.mac",
         "./ModRes/QueenIcon.png": "icon.queen",
         "./Temp/bin/Debug/DCBossesScripts.dll": "script",
-        "./ModCode/Lang/zh.txt": "lang.zh"
+        "./ModRes/Langs/zh.txt": "lang.zh",
+        "./ModRes/Langs/en.txt": "lang.en"
     },
     "dependencies": [
         {

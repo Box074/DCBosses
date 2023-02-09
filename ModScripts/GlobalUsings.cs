@@ -10,3 +10,4 @@ global using HKTool.Unity;
 global using Modding;
 global using UnityEngine;
 global using UnityEngine.SceneManagement;
+global using GlobalEnums;

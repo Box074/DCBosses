@@ -13,9 +13,15 @@ class QueenBoss : BossBase
     }
     public override string Name => "Queen";
 
-    public override Vector2 StatuePos => new(200.43f, 36.46f);
+    public override Vector2 StatuePos => new(219.4694f, 6.4081f);
 
-    public override bool IsImpl => true;
+    public override ImplMode Impl => ImplMode.Public;
+
+    public override string NameKey => "NAME_DC_QUEEN";
+
+    public override string DescKey => "DESC_DC_QUEEN";
+
+    public override string LockedKey => "LOCK_DC_QUEEN";
 
     public override void ModifyBossScene(Scene scene, SceneManager sceneManager, BossSceneController ctrl)
     {
@@ -34,19 +40,10 @@ class QueenBoss : BossBase
 
     public override void ModifyStatue(BossStatue statue)
     {
-        var sd = statue.bossDetails;
-        sd.nameKey = "NAME_DC_QUEEN";
-        sd.descriptionKey = "DESC_DC_QUEEN";
-        statue.bossDetails = sd;
-
-        var plaqueR = statue.gameObject.FindChildWithPath("Base", "Plaque", "Plaque_Trophy_Right");
-        plaqueR?.SetActive(false);
-        var plaqueL = statue.gameObject.FindChildWithPath("Base", "Plaque", "Plaque_Trophy_Left");
-        plaqueL.transform.position = new Vector3(193.359f, 35.1272f, 1.5323f);
-        statue.gameObject.FindChildWithPath("dream_version_switch")?.SetActive(false);
 
         var statueIcon = statue.gameObject.FindChildWithPath("Base", "Statue", "GG_statues_0006_5")
             .GetComponent<SpriteRenderer>();
+        ModRes.ICON_QUEEN.filterMode = FilterMode.Point;
         statueIcon.sprite = ModRes.SPRITE_ICON_QUEEN;
         statueIcon.drawMode = SpriteDrawMode.Sliced;
         statueIcon.size = new Vector2(18, 18);
