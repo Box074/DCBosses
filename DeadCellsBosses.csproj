@@ -1,0 +1,448 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>DeadCellsBosses</AssemblyName>
+    <TargetFramework>net472</TargetFramework>
+    <Version>0.0.0.0</Version>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <Nullable>disable</Nullable>
+    <DebugType>portable</DebugType>
+    <OutputType>Library</OutputType>
+    <LangVersion>preview</LangVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HKToolRefHelper">
+      <HintPath>I:\DCBosses\caches\RefHelper.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>I:\DCBosses\caches\172c3ae30e2abd0867c29cfbe58af00b.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="MMHOOK_Assembly-CSharp">
+      <HintPath>I:\DCBosses\caches\57ba1f2c2b0f4b1c56fab4a16fe48b99.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>I:\DCBosses\caches\c3ddd8c1dfcc182d55aab5759fae0b3a.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>I:\DCBosses\caches\393a319db72399683d918a32607102f1.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>I:\DCBosses\caches\2d8f97e54af915228ba94c4f57f94f48.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="ConditionalExpression">
+      <HintPath>I:\DCBosses\caches\3922c3e0703e8d1ae117a51b910126c6.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="GalaxyCSharp">
+      <HintPath>I:\DCBosses\caches\107c4d74d792d8901f2bee840f58dab4.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="MMHOOK_PlayMaker">
+      <HintPath>I:\DCBosses\caches\23c868b6368b4e9eb8fad9c0701845ed.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>I:\DCBosses\caches\272745086cb31748fbab2347bf1b42fe.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>I:\DCBosses\caches\f7acab1e09deaa11c9bdd0d723363016.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour">
+      <HintPath>I:\DCBosses\caches\3779fa3af489073b4403f0500598cbf3.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="MonoMod.Utils">
+      <HintPath>I:\DCBosses\caches\7aaa781c61cec9f46b41be31d6b6e610.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>I:\DCBosses\caches\92e14598f1f886b75f0a02bf934350b3.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PlayMaker">
+      <HintPath>I:\DCBosses\caches\4270045b38995b0b80fa3bc85079d8c6.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>I:\DCBosses\caches\7cfe714806f245e2571e58be288ea10e.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>I:\DCBosses\caches\f5f0d98cf6abed7eceb4973913c4746f.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>I:\DCBosses\caches\caf99bab07df42b6e4544ae64dc4d908.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>I:\DCBosses\caches\d314b95fb863cdd6119abc7e28e7c1fa.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>I:\DCBosses\caches\1fbb019db62578427a660fdca39139fe.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>I:\DCBosses\caches\f3be59be0a84f1b9ad2b068bacaacf8c.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>I:\DCBosses\caches\1afff3a67c365aed5c2603e9c69d8c51.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <HintPath>I:\DCBosses\caches\5e52017d52644e362bf39d57fd93fa6b.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>I:\DCBosses\caches\f09c5ddef200f21725e5fde17d3b9016.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>I:\DCBosses\caches\bd03377bb478fe581834bb237b4c6725.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>I:\DCBosses\caches\f9a07c1ef58c863f89e74f11a3b21447.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>I:\DCBosses\caches\d0a7d2c01a86da46b6b7f076aeb0ed15.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>I:\DCBosses\caches\885b5345047df2ed6298401f3acf3159.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>I:\DCBosses\caches\e38f503216d5820dfdf2d469e194f999.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>I:\DCBosses\caches\a9f4cef4a4cbc618fb55e324be0ae949.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Internals">
+      <HintPath>I:\DCBosses\caches\db77383f6a5476198c0e065e12d183a7.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>I:\DCBosses\caches\372716edcb838185812ae2b1f729c6df.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>I:\DCBosses\caches\910341b055627c1c6f83444a96ee4daa.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>I:\DCBosses\caches\13489016860b776576969ae7c4a08a91.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>I:\DCBosses\caches\a9550b31f294bd35d030f4760b591bf0.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>I:\DCBosses\caches\9608e6baf8b876945745bb0dec6a5f0b.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>I:\DCBosses\caches\989783fdc88a82cd54366b115e798602.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>I:\DCBosses\caches\739903b96ec5d291d169872ab980fb80.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>I:\DCBosses\caches\82b7f5fd441035e3a81c7c3d9c6cfc30.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>I:\DCBosses\caches\c7b356da42f75f168feab11cc2bbc6e2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>I:\DCBosses\caches\e4c228c5a672d903598083a6a06585b5.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>I:\DCBosses\caches\764c49bbd87254162dd46510c3652258.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>I:\DCBosses\caches\462e23b9f5303d6b2b7833bff31d9e71.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>I:\DCBosses\caches\cbbcbd5331dc8cd5e448ccf9dd23b7d0.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>I:\DCBosses\caches\823cbf595e85efa42bb1478d72012108.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>I:\DCBosses\caches\3e660da15aa7f694d169c5e4dfcb04f2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>I:\DCBosses\caches\3baa1ada85a937d3cbc6e4321a962507.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>I:\DCBosses\caches\d154acec2d26c76cc53917266a2ba63a.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>I:\DCBosses\caches\b8422e04c0b244a4dbe4a2f57527b7c6.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>I:\DCBosses\caches\fd97f6abc322df78314053602a47988d.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>I:\DCBosses\caches\45d39edaad52528f1b03dcaa08c03b9b.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>I:\DCBosses\caches\c18787ae23fb9cce82cf9b17e60092ed.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>I:\DCBosses\caches\1c00c3b22ba2df794825f59ed19a6dee.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>I:\DCBosses\caches\a6b5696e6e18f3985011890084798faa.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>I:\DCBosses\caches\206c060348d54b47b7831a01000bfffa.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>I:\DCBosses\caches\7c5152191266efdb9177f00b5b1767c1.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>I:\DCBosses\caches\30368b7df17b3cb701ccbd00e1bcace5.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>I:\DCBosses\caches\aa091e3bca47b0edb5cc65d26830fe73.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>I:\DCBosses\caches\a718c3c27d1402c95452d70a59e9137f.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>I:\DCBosses\caches\62bef5b83b74825998959294a96951c3.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>I:\DCBosses\caches\c2a1385bf24986f295f23f7698ec402d.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>I:\DCBosses\caches\39abd37e8e5c3759ce7010177c1d5f38.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>I:\DCBosses\caches\73d3d715b54cd70dff93b67d66776e68.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>I:\DCBosses\caches\c61400b66246b404a046f978b9499573.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>I:\DCBosses\caches\2d8ccd03e9dc900d5d5da6f923f869e6.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>I:\DCBosses\caches\447905342bfd0c21699cbb7b547df33b.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>I:\DCBosses\caches\d368a392037a389e034d898d07e84c26.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>I:\DCBosses\caches\966825ffbd7f76089f21d1dc8f81daf6.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>I:\DCBosses\caches\bae67c23c2352901f0389a7f0252329e.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>I:\DCBosses\caches\74d2c3b6676c64c655a9899c8e64684b.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>I:\DCBosses\caches\04aa5f87d01148e1c79201dcdaed994a.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>I:\DCBosses\caches\2c8e0f31ed8f40d1a383a54c4392bc8a.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>I:\DCBosses\caches\d7f1d645b6679f5a934fe5e27dabfa05.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>I:\DCBosses\caches\ad4a9e686a891199a47d568653a0d7d7.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>I:\DCBosses\caches\2d02fbddc21d3314a7a56255fcadb4aa.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>I:\DCBosses\caches\7f501da5da78b5cac18879839fcc5281.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>I:\DCBosses\caches\3cb39cdeb9b92c865df031f2fcbf7648.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>I:\DCBosses\caches\920c99924464a1538ce614efe2af92fe.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>I:\DCBosses\caches\adad676de009c35e2959e12701ba0e1c.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>I:\DCBosses\caches\5d497ec2001f9d44df65db9042754ec2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>I:\DCBosses\caches\c6abcc845c9114469ca3661171109363.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>I:\DCBosses\caches\0db1b3fb0f147ed4a73761004c038c33.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>I:\DCBosses\caches\5376c94808e32a6e2b900e6aeec4b251.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>I:\DCBosses\caches\d7058d57667a6a8baf33f6be3c6bfb7f.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>I:\DCBosses\caches\7a943b588842aa483ba3b8e036d87ee5.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>I:\DCBosses\caches\2b4a3d5cab23069223b3a1b9d8411ebf.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>I:\DCBosses\caches\e04fea620c08c0884171eefe64cb5139.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>I:\DCBosses\caches\c9427d91190bd066b70601acc85accdf.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>I:\DCBosses\caches\b621089075483879491c7caccf46a324.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>I:\DCBosses\caches\c1cf4642994ca2adb9733e8704d953bf.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>I:\DCBosses\caches\f3e716dba3f4ca898c3893611faccdd4.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>I:\DCBosses\caches\d374886519320e019eca2d8b0a596b4e.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>I:\DCBosses\caches\0d7b326c7425e6ad71226e4b890e8e4b.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>I:\DCBosses\caches\3fcb96c205d5556d7aceb4c52e88e427.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>I:\DCBosses\caches\6008fb47f3b5f67dd35237986ddf4831.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>I:\DCBosses\caches\19c125e30e59a705dd79218286324ba0.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>I:\DCBosses\caches\4eefd0eebccbbf8db334bdb24cad273a.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>I:\DCBosses\caches\d0a8a34c9660c410cee146f879d0f1b8.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>I:\DCBosses\caches\6313e4e3eb563b98a16d3a7a3ddb399c.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>I:\DCBosses\caches\d341bccc71a488df215198f379567b6e.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>I:\DCBosses\caches\7745bb6dd93af32d06a8479551755beb.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>I:\DCBosses\caches\695f2188f6ba7555472a0cf8037253d2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="XGamingRuntime">
+      <HintPath>I:\DCBosses\caches\645a8fbffaf9158824542546e7197d65.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="zlib.net">
+      <HintPath>I:\DCBosses\caches\5c677eba3a7a05c0bc22288198c19383.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="HKTool">
+      <HintPath>I:\DCBosses\caches\ffb2eeabe9d7d3e04bb620776b163f83.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="DCBossesScripts">
+      <HintPath>I:\DCBosses\Temp\bin\Debug\DCBossesScripts.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Compile Include="I:\DCBosses\ModScripts\**\*.cs"/>
+
+    <Compile Include="I:\DCBosses\caches\DeadCellsBosses-CompileInfo.cs"/>
+
+    <Compile Include="I:\DCBosses\caches\DeadCellsBosses-ModResInfo.cs"/>
+
+  </ItemGroup>
+</Project>
