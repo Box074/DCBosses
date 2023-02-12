@@ -1,6 +1,6 @@
 {
     "modName": "DeadCellsBosses",
-    "modVersion": "0.0.0.0",
+    "modVersion": "1.0.0.0",
     "codeDir": "./ModScripts",
     "reference": [
         "./Temp/bin/Debug/DCBossesScripts.dll"
