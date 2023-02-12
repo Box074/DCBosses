@@ -38,10 +38,13 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\TakeDamageEffect.cs" />
      <Compile Include="Assets\Scripts\SendFSMEvent.cs" />
+     <Compile Include="Assets\Scripts\SetControlHero.cs" />
      <Compile Include="Assets\Scripts\FaceHero.cs" />
      <Compile Include="Assets\Scripts\Common\ColliderControl.cs" />
      <Compile Include="Assets\Scripts\NailParryFsm.cs" />
+     <Compile Include="Assets\Scripts\SetPlayerData.cs" />
      <Compile Include="Assets\Scripts\GetOrAddScreenCut.cs" />
+     <Compile Include="Assets\Scripts\OnlyWalkActionProxy.cs" />
      <Compile Include="Assets\Scripts\SendGlobalFSMEvent.cs" />
      <Compile Include="Assets\Scripts\Common\ShaderManager.cs" />
      <Compile Include="Assets\Scripts\Queen\HeadFollow.cs" />
@@ -50,9 +53,8 @@
      <Compile Include="Assets\Scripts\ScreenCut.cs" />
      <Compile Include="Assets\Scripts\Common\CartoonRenderer.cs" />
      <Compile Include="Assets\Scripts\Queen\CutSpaceMask.cs" />
-     <Compile Include="Assets\Scripts\SetPlayerData.cs" />
-     <Compile Include="Assets\Scripts\SetControlHero.cs" />
-     <Compile Include="Assets\Scripts\OnlyWalkActionProxy.cs" />
+     <Compile Include="Assets\Scripts\CheckHeroStatus.cs" />
+     <Compile Include="Assets\Scripts\CheckIsVisible.cs" />
      <None Include="Assets\Scripts\DCBossesScripts.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>F:/U3D/2020.3.2f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

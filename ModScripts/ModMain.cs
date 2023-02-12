@@ -26,7 +26,9 @@ partial class DeadCellsBosses : ModBase, ILocalSettings<Settings>
     public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects)
     {
         I18n.UseLanguageHook = true;
-
+        CheckHeroStatus.onCheckFocus += () => HeroController.instance.cState.focusing;
+        CheckHeroStatus.onCheckFocusWithShield += () => HeroController.instance.cState.focusing && PlayerData.instance.equippedCharm_5;
+        CheckHeroStatus.onCheckQuake += () => HeroController.instance.cState.spellQuake;
         NailParryFsm.onLoad += (NailParryFsm self) =>
         {
             var fsm = self.gameObject.AddComponent<PlayMakerFSM>();

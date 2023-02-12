@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCBossesScripts", "DCBosses
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{d4062fbf-5650-1cec-f835-996217f7c1c6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadCellsBosses", "DeadCellsBosses.csproj", "{E9301168-F138-4F50-B6D3-7358569378B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadCellsBosses", "DeadCellsBosses.csproj", "{3DB59239-B4FB-4128-9213-37964C32F51C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,8 +24,8 @@ Global
 		{c44f6860-0c50-4fe4-4d06-63831d1e9f4d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{d4062fbf-5650-1cec-f835-996217f7c1c6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{d4062fbf-5650-1cec-f835-996217f7c1c6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9301168-F138-4F50-B6D3-7358569378B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9301168-F138-4F50-B6D3-7358569378B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB59239-B4FB-4128-9213-37964C32F51C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB59239-B4FB-4128-9213-37964C32F51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

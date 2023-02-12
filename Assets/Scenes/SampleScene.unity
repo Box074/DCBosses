@@ -259,7 +259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334881622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.49, y: 3.71, z: 0}
+  m_LocalPosition: {x: 11.73, y: 3.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -630,6 +630,10 @@ PrefabInstance:
     - target: {fileID: 2517430439930541537, guid: 62ea6b4a4bb42914892f1a1370e1ebfa, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.0005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717464080586629851, guid: 62ea6b4a4bb42914892f1a1370e1ebfa, type: 3}
+      propertyPath: hp
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 3161048332096096512, guid: 62ea6b4a4bb42914892f1a1370e1ebfa, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
@@ -1310,6 +1314,22 @@ PrefabInstance:
     - target: {fileID: 6031396979658277421, guid: 62ea6b4a4bb42914892f1a1370e1ebfa, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 22.727272
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472789567575079775, guid: 62ea6b4a4bb42914892f1a1370e1ebfa, type: 3}
+      propertyPath: fsm.editorFlags
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472789567575079775, guid: 62ea6b4a4bb42914892f1a1370e1ebfa, type: 3}
+      propertyPath: fsm.variables.boolVariables.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758931282367073183, guid: 62ea6b4a4bb42914892f1a1370e1ebfa, type: 3}
+      propertyPath: fsm.editorFlags
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758931282367073183, guid: 62ea6b4a4bb42914892f1a1370e1ebfa, type: 3}
+      propertyPath: fsm.variables.boolVariables.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8382325621106433838, guid: 62ea6b4a4bb42914892f1a1370e1ebfa, type: 3}
       propertyPath: m_Size.x

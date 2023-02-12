@@ -55,6 +55,7 @@
      <Compile Include="Assets\HKScripts\SceneType.cs" />
      <Compile Include="Assets\HKScripts\Actions\SendREV3.cs" />
      <Compile Include="Assets\HKScripts\DamageHero.cs" />
+     <Compile Include="Assets\HKScripts\EnemyDreamnailReaction.cs" />
      <Compile Include="Assets\HKScripts\Actions\GetHP.cs" />
      <Compile Include="Assets\HKScripts\LayerInfo.cs" />
      <Compile Include="Assets\HKScripts\EnemyDeathEffectsNoEffect.cs" />
@@ -85,7 +86,7 @@
      <Compile Include="Assets\HKScripts\NonSlider.cs" />
      <Compile Include="Assets\HKScripts\MapZone.cs" />
      <Compile Include="Assets\HKScripts\Actions\WaitForSceneLoad.cs" />
-     <Compile Include="Assets\HKScripts\EnemyDreamnailReaction.cs" />
+     <Compile Include="Assets\HKScripts\Actions\CheckGGBossLevel.cs" />
      <None Include="Assets\HKScripts\HKTool.FakeHK.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>F:/U3D/2020.3.2f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
