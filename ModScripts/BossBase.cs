@@ -36,7 +36,7 @@ abstract class BossBase
         GameObject audios = new GameObject();
         audios.transform.parent = hm.transform;
         he.audioPlayerPrefab = audios.AddComponent<AudioSource>();
-
+        he.enemyDamage = DeadCellsBosses.hitEffect.enemyDamage;
         ReflectionHelper.SetField<HealthManager, IHitEffectReciever>(hm, "hitEffectReceiver", he);
     }
 }

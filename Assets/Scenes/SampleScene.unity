@@ -610,6 +610,10 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5211295348799908981, guid: 6fe1fc4ff25137845be4012d7180e3ff, type: 3}
+      propertyPath: fsm.preprocessed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fe1fc4ff25137845be4012d7180e3ff, type: 3}
 --- !u!1001 &1186791930

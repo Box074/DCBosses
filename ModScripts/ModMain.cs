@@ -32,6 +32,29 @@ partial class DeadCellsBosses : ModBase, ILocalSettings<Settings>
             var fsm = self.gameObject.AddComponent<PlayMakerFSM>();
             fsm.SetFsmTemplate(fsm_nail_clash_tink);
         };
+        SetPlayerData.onSetPlayerData += (name, value) => {
+            if(value == null || name == null) return;
+            var type = value.GetType();
+            var md = typeof(PlayerData).GetMethod(nameof(PlayerData.SetVariable)).MakeGenericMethod(type);
+            md.Invoke(PlayerData.instance, new[] { name, value });
+        };
+        SetControlHero.onSetControlHero += (val) => {
+            var hc = HeroController.instance;
+            if(val) 
+            {
+                hc.RelinquishControlNotVelocity();
+                hc.StopAnimationControl();
+                hc.GetComponent<tk2dSpriteAnimator>().Play("Idle");
+            }
+            else 
+            {
+                hc.StartAnimationControl();
+                hc.RegainControl();
+            }
+        };
+        OnlyWalkActionProxy.onLoad += (OnlyWalkActionProxy self) => {
+            self.gameObject.AddComponent<OnlyWalkAction>();
+        };
 
         ReflectionHelper.SetField(emptyCue, "channelInfos", Enumerable.Range(0, 8).Select(x => new MusicCue.MusicChannelInfo()).ToArray());
         UnityEngine.Object.Destroy(_SceneManagerPrefab.LocateMyFSM("FSM"));
@@ -48,7 +71,7 @@ partial class DeadCellsBosses : ModBase, ILocalSettings<Settings>
             if (type != typeof(BossStatue.Completion)) return orig;
             foreach (var v in BossBase.bosses)
             {
-                var pname = $"GG_Statue_DC_{v.Name}";
+                var pname = "statueStateDC" + v.Name;
                 if (name != pname) continue;
                 var result = settings.status.TryGetOrAddValue(v.Name, () =>
                 {
@@ -74,10 +97,10 @@ partial class DeadCellsBosses : ModBase, ILocalSettings<Settings>
         };
         ModHooks.SetPlayerVariableHook += (type, name, orig) =>
         {
-            if (type != typeof(BossStatue.Completion) || name != "statueStateDCQueen") return orig;
+            if (type != typeof(BossStatue.Completion)) return orig;
             foreach (var v in BossBase.bosses)
             {
-                var pname = $"GG_Statue_DC_{v.Name}";
+                var pname = "statueStateDC" + v.Name;
                 if (name != pname) continue;
                 settings.status[v.Name] = (BossStatue.Completion)orig;
             }
@@ -174,7 +197,8 @@ partial class DeadCellsBosses : ModBase, ILocalSettings<Settings>
                             sceneName = ""
                         }
                     }
-                }
+                },
+                requireUnlock = true
             };
 
             v.ModifyStatue(s);

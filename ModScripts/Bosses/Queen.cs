@@ -9,7 +9,12 @@ class QueenBoss : BossBase
 
     public override void Init()
     {
-        _ = ModRes.AB_WIN;
+        _ = Application.platform switch{
+            RuntimePlatform.WindowsPlayer => ModRes.AB_QUEEN_WIN,
+            RuntimePlatform.LinuxPlayer => ModRes.AB_QUEEN_LINUX,
+            RuntimePlatform.OSXPlayer => ModRes.AB_QUEEN_MAC,
+            _ => throw new PlatformNotSupportedException()
+        };
     }
     public override string Name => "Queen";
 

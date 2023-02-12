@@ -13,15 +13,15 @@
         "modifyIL": false,
         "modRes": {
             "ab.queen.win": {
-                "name": "AB_WIN",
+                "name": "AB_QUEEN_WIN",
                 "type": "ab"
             },
             "ab.queen.linux": {
-                "name": "AB_LINUX",
+                "name": "AB_QUEEN_LINUX",
                 "type": "ab"
             },
             "ab.queen.mac": {
-                "name": "AB_MAC",
+                "name": "AB_QUEEN_MAC",
                 "type": "ab"
             },
             "script": {
@@ -47,9 +47,9 @@
         "referenceLib": true
     },
     "resources": {
-        "./Assets/AssetBundles/queenscene": "ab.queen.win",
+        "./Assets/AssetBundles/Windows/queenscene": "ab.queen.win",
         "./Assets/AssetBundles/Linux/queenscene": "ab.queen.linux",
-        "./Assets/AssetBundles/MacOs/queenscene": "ab.queen.mac",
+        "./Assets/AssetBundles/OSX/queenscene": "ab.queen.mac",
         "./ModRes/QueenIcon.png": "icon.queen",
         "./Temp/bin/Debug/DCBossesScripts.dll": "script",
         "./ModRes/Langs/zh.txt": "lang.zh",
