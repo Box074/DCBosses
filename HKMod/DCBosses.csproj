@@ -4,11 +4,7 @@
     <TargetFramework>net472</TargetFramework>
     <ModName>Dead Cells Bosses</ModName>
   </PropertyGroup>
-
-  <PropertyGroup>
-    <ScriptAssembly>../Temp/bin/Debug/DCBossesScripts.dll</ScriptAssembly>
-    <ScriptAssembly Condition="!Exists('$(ScriptAssembly)')">../Library/ScriptAssemblies/DCBossesScripts.dll</ScriptAssembly>
-  </PropertyGroup>
+  
   <ItemGroup>
     <PackageReference Include="HKBuildUtils" Version="0.5.56">
       <PrivateAssets>all</PrivateAssets>
@@ -17,12 +13,7 @@
   </ItemGroup>
   <ItemGroup>
     <ModReference Include="HKTool" AssemblyName="HKTool2" />
-
-    <Reference Include="$(ScriptAssembly)">
-      <Private>true</Private>
-    </Reference>
-
-    <OutputFiles Include="DCBossesScripts.dll" />
+    <OutputFiles Include="DCBossesScripts.dll;DCBossesScripts.pdb" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,5 +21,9 @@
     <ModResource Include="AssetBundles/**" />
 
     <ModResource Remove="AssetBundles/**/*.manifest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="DCBossesScripts.csproj" />
   </ItemGroup>
 </Project>

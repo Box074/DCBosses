@@ -67,8 +67,12 @@ projectCache.json
 
 AssetBundles/
 
-/*.sln
-/*.csproj
+*.sln
+*.csproj
 
 bin/
 obj/
+
+!/HKMod/AssetBundles/
+!/HKMod/**/*.sln
+!/HKMod/**/*.csproj
