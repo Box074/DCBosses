@@ -13,7 +13,8 @@ jobs:
         dotnet-version: 7
     - name: Build
       run: |
-        dotnet build -c=Release
+        cd ./HKMod
+        dotnet build -c=Release DCBosses.sln
     - name: Upload
       uses: actions/upload-artifact@v3
       with:
