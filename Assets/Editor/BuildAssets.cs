@@ -11,14 +11,14 @@ public class CreateAssetBundles
     [MenuItem("Assets/Build AssetBundles")]
     static void BuildAssetBundles()
     {
-        string assetBundleDirectory = "Assets/AssetBundles/Windows";
+        string assetBundleDirectory = "HKMod/AssetBundles/Windows";
         if (!Directory.Exists(assetBundleDirectory))
         {
             Directory.CreateDirectory(assetBundleDirectory);
         }
         var build = new AssetBundleBuild();
         build.assetBundleName = "queenscene";
-        build.assetBundleVariant = "";
+        build.assetBundleVariant = "ab";
         build.addressableNames = new string[1];
         build.assetNames = new string[] {
             "Assets/Scenes/Queen/QueenScene.unity"
@@ -27,11 +27,21 @@ public class CreateAssetBundles
                                         new AssetBundleBuild[] { build },
                                         BuildAssetBundleOptions.ChunkBasedCompression,
                                         BuildTarget.StandaloneWindows);
+
+        foreach (var file in Directory.EnumerateFiles(assetBundleDirectory))
+        {
+            if (!Path.GetFileName(file).StartsWith("ab."))
+            {
+                var dst = Path.Combine(assetBundleDirectory, "ab.StandaloneWindows." + Path.GetFileName(file));
+                if (File.Exists(dst)) File.Delete(dst);
+                File.Move(file, dst);
+            }
+        }
     }
     [MenuItem("Assets/Build All AssetBundles")]
     static void BuildAllAssetBundles()
     {
-        string assetBundleDirectory = "Assets/AssetBundles";
+        string assetBundleDirectory = "HKMod/AssetBundles";
         if (!Directory.Exists(assetBundleDirectory))
         {
             Directory.CreateDirectory(assetBundleDirectory);
@@ -42,6 +52,7 @@ public class CreateAssetBundles
             var build = new AssetBundleBuild();
             build.assetBundleName = v.Key;
             build.addressableNames = new string[1];
+            build.assetBundleVariant = "ab";
             build.assetNames = new string[] {
                 v.Value
             };
@@ -61,6 +72,17 @@ public class CreateAssetBundles
                                         builds.ToArray(),
                                         BuildAssetBundleOptions.ChunkBasedCompression,
                                         v.Item1);
+
+            foreach(var file in Directory.EnumerateFiles(dir))
+            {
+                if(!Path.GetFileName(file).StartsWith("ab."))
+                {
+                    var dst = Path.Combine(dir, "ab." + v.Item1.ToString() + "." + Path.GetFileName(file));
+
+                    if (File.Exists(dst)) File.Delete(dst);
+                    File.Move(file, dst);
+                }
+            }
         }
     }
 }

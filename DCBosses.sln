@@ -1,31 +1,36 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{312f07e1-3e75-5121-1357-70991df78f46}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{E1072F31-753E-2151-1357-70991DF78F46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HKTool.FakeHK", "HKTool.FakeHK.csproj", "{d127368d-57b3-c3ed-f221-0284ac7533fa}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HKTool.FakeHK", "HKTool.FakeHK.csproj", "{8D3627D1-B357-EDC3-F221-0284AC7533FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCBossesScripts", "DCBossesScripts.csproj", "{c44f6860-0c50-4fe4-4d06-63831d1e9f4d}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCBossesScripts", "DCBossesScripts.csproj", "{60684FC4-500C-E44F-4D06-63831D1E9F4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{d4062fbf-5650-1cec-f835-996217f7c1c6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadCellsBosses", "DeadCellsBosses.csproj", "{3DB59239-B4FB-4128-9213-37964C32F51C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{BF2F06D4-5056-EC1C-F835-996217F7C1C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{312f07e1-3e75-5121-1357-70991df78f46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{312f07e1-3e75-5121-1357-70991df78f46}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{d127368d-57b3-c3ed-f221-0284ac7533fa}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{d127368d-57b3-c3ed-f221-0284ac7533fa}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{c44f6860-0c50-4fe4-4d06-63831d1e9f4d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{c44f6860-0c50-4fe4-4d06-63831d1e9f4d}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{d4062fbf-5650-1cec-f835-996217f7c1c6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{d4062fbf-5650-1cec-f835-996217f7c1c6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3DB59239-B4FB-4128-9213-37964C32F51C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3DB59239-B4FB-4128-9213-37964C32F51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1072F31-753E-2151-1357-70991DF78F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1072F31-753E-2151-1357-70991DF78F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1072F31-753E-2151-1357-70991DF78F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1072F31-753E-2151-1357-70991DF78F46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D3627D1-B357-EDC3-F221-0284AC7533FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D3627D1-B357-EDC3-F221-0284AC7533FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D3627D1-B357-EDC3-F221-0284AC7533FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D3627D1-B357-EDC3-F221-0284AC7533FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60684FC4-500C-E44F-4D06-63831D1E9F4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60684FC4-500C-E44F-4D06-63831D1E9F4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60684FC4-500C-E44F-4D06-63831D1E9F4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60684FC4-500C-E44F-4D06-63831D1E9F4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF2F06D4-5056-EC1C-F835-996217F7C1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF2F06D4-5056-EC1C-F835-996217F7C1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF2F06D4-5056-EC1C-F835-996217F7C1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF2F06D4-5056-EC1C-F835-996217F7C1C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

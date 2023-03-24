@@ -73,6 +73,7 @@ Shader "DC/CartoonShader"
 				o.wNormal = UnityObjectToWorldNormal(v.normal);
 				o.wTangent = UnityObjectToWorldNormal(v.tangent);
 				o.wBitangent = cross(-o.wTangent, o.wNormal) * v.tangent.w;
+                
                 return o;
             }
             

@@ -64,3 +64,11 @@ Info.txt
 #Cache
 /caches/
 projectCache.json
+
+AssetBundles/
+
+/*.sln
+/*.csproj
+
+bin/
+obj/

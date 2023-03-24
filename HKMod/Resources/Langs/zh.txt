@@ -1,0 +1,17 @@
+
+NAME_DC_QUEEN=王后
+DESC_DC_QUEEN=
+LOCK_DC_QUEEN=我守护着灯塔
+
+DC_QUEEN_DEATH_0=看来……木已成舟……
+DC_QUEEN_INTRO_0=是闯入者来了啊<page>疫病让这个王国变成这番模样，你也该明白我们决不能让任何东西离开这里<page>不过看起来和你是不能讲道理了
+DC_QUEEN_INTRO_0_KING=很高兴看见你为此精心打扮<page>不过，别以为会有什么用。我不能让你这么做。
+
+DC_QUEEN_DREAM_1=你就这点水平？
+DC_QUEEN_DREAM_2=你就这点水平？
+DC_QUEEN_DREAM_3=可悲……
+DC_QUEEN_DREAM_4=这可不愉快
+
+NAME_DC_TIMEKEEPER=时光守护者
+DESC_DC_TIMEKEEPER=WIP
+LOCK_DC_TIMEKEEPER=我控制着时间
