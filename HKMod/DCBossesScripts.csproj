@@ -4,7 +4,7 @@
     <TargetFramework>net7</TargetFramework>
 
     <ModName>Dead Cells Bosses</ModName>
-
+    <Version>1.1.0.0</Version>
     <DefineConstants>$(DefineConstants);BUILD_HKMOD</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
