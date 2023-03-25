@@ -1,9 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7</TargetFramework>
 
     <EnableDefaultItems>false</EnableDefaultItems>
+
+    <BaseOutputPath>bin/scripts/</BaseOutputPath>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="HKBuildUtils" Version="0.5.56">
