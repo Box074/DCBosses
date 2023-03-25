@@ -76,3 +76,5 @@ obj/
 !/HKMod/AssetBundles/
 !/HKMod/**/*.sln
 !/HKMod/**/*.csproj
+
+~ModLibrary/

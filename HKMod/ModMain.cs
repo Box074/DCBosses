@@ -205,5 +205,4 @@ partial class DeadCellsBosses : ModBase, ILocalSettings<Settings>
         }
     }
 
-    private int count = 0;
 }
