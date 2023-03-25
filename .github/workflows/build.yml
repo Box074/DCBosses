@@ -14,8 +14,8 @@ jobs:
     - name: Build
       run: |
         cd ./HKMod
-        dotnet build -v=diag -c=Release DCBossesScripts.csproj
-        dotnet build -v=diag -c=Release DCBosses.csproj
+        dotnet build -c=Release DCBossesScripts.csproj
+        dotnet build -c=Release DCBosses.csproj
     - name: Upload
       uses: actions/upload-artifact@v3
       with:

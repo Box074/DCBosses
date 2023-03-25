@@ -4,8 +4,6 @@
     <TargetFramework>net7</TargetFramework>
 
     <EnableDefaultItems>false</EnableDefaultItems>
-
-    <BaseOutputPath>bin\script</BaseOutputPath>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="HKBuildUtils" Version="0.5.56">
