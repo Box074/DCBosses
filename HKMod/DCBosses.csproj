@@ -13,7 +13,7 @@
   </ItemGroup>
   <ItemGroup>
     <ModReference Include="HKTool" AssemblyName="HKTool2" />
-    <OutputFiles Include="DCBossesScripts.dll;DCBossesScripts.pdb" />
+    <OutputFiles Include="DCBossesScripts.dll" />
   </ItemGroup>
 
   <ItemGroup>
