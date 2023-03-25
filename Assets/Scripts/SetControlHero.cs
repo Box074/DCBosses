@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SetControlHero : FsmStateAction
 {
-    public static Action<bool> onSetControlHero;
+
     public override void OnEnter()
     {
         DoSet();
@@ -22,7 +22,20 @@ public class SetControlHero : FsmStateAction
     }
     private void DoSet()
     {
-        onSetControlHero?.Invoke(value?.Value ?? false);
+#if BUILD_HKMOD
+        var hc = HeroController.instance;
+        if (value.Value)
+        {
+            hc.RelinquishControlNotVelocity();
+            hc.StopAnimationControl();
+            hc.GetComponent<tk2dSpriteAnimator>().Play("Idle");
+        }
+        else
+        {
+            hc.StartAnimationControl();
+            hc.RegainControl();
+        }
+#endif
     }
     
     public FsmBool value;

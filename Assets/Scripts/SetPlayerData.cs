@@ -1,10 +1,10 @@
 using System;
 using HutongGames.PlayMaker;
 using UnityEngine;
+using static Mono.Security.X509.X520;
 
 public class SetPlayerData : FsmStateAction
 {
-    public static Action<string, object> onSetPlayerData;
     public override void OnEnter()
     {
         DoSet();
@@ -22,7 +22,11 @@ public class SetPlayerData : FsmStateAction
     }
     private void DoSet()
     {
-        onSetPlayerData?.Invoke(pdName?.Value, value?.GetValue());
+#if BUILD_HKMOD
+        var type = value.GetType();
+        var md = typeof(PlayerData).GetMethod(nameof(PlayerData.SetVariable)).MakeGenericMethod(type);
+        md.Invoke(PlayerData.instance, new object[] { pdName.Value, value });
+#endif
     }
     
     

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CutSpaceMask : MonoBehaviour
 {
-    public new Renderer renderer;
+    public Renderer renderer;
     public Shader cutSpaceShader;
     public Vector3 start;
     public Vector3 end;

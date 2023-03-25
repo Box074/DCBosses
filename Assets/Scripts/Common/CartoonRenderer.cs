@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CartoonRenderer : MonoBehaviour
 {
-    public new SpriteRenderer renderer;
+    public SpriteRenderer renderer;
     public Texture2D[] normals;
     void Update()
     {

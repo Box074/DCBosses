@@ -5,21 +5,14 @@ using HutongGames.PlayMaker;
 
 public class CheckHeroStatus : FsmStateAction
 {
-    public static Func<bool> onCheckMoveable;
-    public static Func<bool> onCheckFocus;
-    public static Func<bool> onCheckQuake;
-    public static Func<bool> onCheckFocusWithShield;
-    private void Check(FsmBool result, Func<bool> check, bool defaultValue = false) 
-    {
-        if(result?.IsNone ?? true) return;
-        result.Value = check?.Invoke() ?? defaultValue;
-    }
+
     private void DoCheck()
     {
-        Check(isMoveable, onCheckMoveable);
-        Check(isFocus, onCheckFocus);
-        Check(isQuake, onCheckQuake);
-        Check(isFocusWithShield, onCheckFocusWithShield);
+#if BUILD_HKMOD
+        isFocus.Value = HeroController.instance.cState.focusing;
+        isFocusWithShield.Value = HeroController.instance.cState.focusing && PlayerData.instance.equippedCharm_5;
+        isQuake.Value = HeroController.instance.cState.spellQuake;
+#endif
     }
     public override void OnEnter()
     {

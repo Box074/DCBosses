@@ -1,12 +1,15 @@
+using DCBossesMod;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class NailParryFsm : MonoBehaviour
 {
-    public static System.Action<NailParryFsm> onLoad;
+#if BUILD_HKMOD
     void Awake()
     {
-        onLoad?.Invoke(this);
+        var fsm = gameObject.AddComponent<PlayMakerFSM>();
+        fsm.SetFsmTemplate(DeadCellsBosses.fsm_nail_clash_tink);
     }
+#endif
 }

@@ -3,11 +3,15 @@
   <PropertyGroup>
     <TargetFramework>net7</TargetFramework>
 
-    <EnableDefaultItems>false</EnableDefaultItems>
+    <ModName>Dead Cells Bosses</ModName>
 
-    <BaseOutputPath>bin/scripts/</BaseOutputPath>
+    <DefineConstants>$(DefineConstants);BUILD_HKMOD</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Fody" Version="6.6.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="HKBuildUtils" Version="0.5.56">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -16,5 +20,19 @@
 
   <ItemGroup>
     <Compile Include="../Assets/Scripts/**/*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ModReference Include="HKTool" AssemblyName="HKTool2" />
+    <OutputFiles Include="DCBossesScripts.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ModResource Include="Resources/**/*" />
+    <ModResource Include="AssetBundles/**" />
+
+    <ModResource Remove="AssetBundles/**/*.manifest" />
+
+    <ReflectHelper Include="Assembly-CSharp" />
   </ItemGroup>
 </Project>

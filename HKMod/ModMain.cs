@@ -22,39 +22,9 @@ partial class DeadCellsBosses : ModBase, ILocalSettings<Settings>
     public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects)
     {
         I18n.UseLanguageHook = true;
-        CheckHeroStatus.onCheckFocus += () => HeroController.instance.cState.focusing;
-        CheckHeroStatus.onCheckFocusWithShield += () => HeroController.instance.cState.focusing && PlayerData.instance.equippedCharm_5;
-        CheckHeroStatus.onCheckQuake += () => HeroController.instance.cState.spellQuake;
-        NailParryFsm.onLoad += (NailParryFsm self) =>
-        {
-            var fsm = self.gameObject.AddComponent<PlayMakerFSM>();
-            fsm.SetFsmTemplate(fsm_nail_clash_tink);
-        };
-        SetPlayerData.onSetPlayerData += (name, value) => {
-            if(value == null || name == null) return;
-            var type = value.GetType();
-            var md = typeof(PlayerData).GetMethod(nameof(PlayerData.SetVariable)).MakeGenericMethod(type);
-            md.Invoke(PlayerData.instance, new[] { name, value });
-        };
-        SetControlHero.onSetControlHero += (val) => {
-            var hc = HeroController.instance;
-            if(val) 
-            {
-                hc.RelinquishControlNotVelocity();
-                hc.StopAnimationControl();
-                hc.GetComponent<tk2dSpriteAnimator>().Play("Idle");
-            }
-            else 
-            {
-                hc.StartAnimationControl();
-                hc.RegainControl();
-            }
-        };
-        OnlyWalkActionProxy.onLoad += (OnlyWalkActionProxy self) => {
-            self.gameObject.AddComponent<OnlyWalkAction>();
-        };
 
-        ReflectionHelper.SetField(emptyCue, "channelInfos", Enumerable.Range(0, 8).Select(x => new MusicCue.MusicChannelInfo()).ToArray());
+        emptyCue.Reflect().channelInfos = new MusicChannelInfoR[1];
+
         UnityEngine.Object.Destroy(_SceneManagerPrefab.LocateMyFSM("FSM"));
 
         hitEffect = HKPrime.GetComponent<EnemyHitEffectsUninfected>();
