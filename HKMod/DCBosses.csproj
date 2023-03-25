@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <ModName>Dead Cells Bosses</ModName>
   </PropertyGroup>
   
