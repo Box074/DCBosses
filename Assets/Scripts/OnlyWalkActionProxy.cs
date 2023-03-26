@@ -1,4 +1,6 @@
+#if BUILD_HKMOD
 using DCBossesMod;
+#endif
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

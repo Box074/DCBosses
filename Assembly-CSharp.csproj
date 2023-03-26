@@ -871,6 +871,7 @@
      <None Include="Assets\Material\CutScreen.shader" />
      <None Include="Assets\PlayMaker\ConditionalExpression.dll" />
      <None Include="Assets\PlayMaker\Resources\PlayMakerAssemblies.txt" />
+     <None Include="Assets\Material\BossTextureProcessing.shader" />
      <None Include="Assets\Material\StatusShader.shader" />
      <None Include="Assets\Material\CartoonShader.shader" />
     <Reference Include="UnityEngine">

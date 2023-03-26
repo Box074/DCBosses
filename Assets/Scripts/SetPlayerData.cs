@@ -1,7 +1,6 @@
 using System;
 using HutongGames.PlayMaker;
 using UnityEngine;
-using static Mono.Security.X509.X520;
 
 public class SetPlayerData : FsmStateAction
 {

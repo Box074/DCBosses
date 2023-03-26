@@ -675,41 +675,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3816288573508076112}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7c4ea097418a464e824fe3901489132, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   renderer: {fileID: 8382325621106433838}
-  normals:
-  - {fileID: 2800000, guid: 6efb2b5c1c4751641867af340d752df2, type: 3}
-  - {fileID: 2800000, guid: bba73bae156219a43bb91f2a4d163a4e, type: 3}
-  - {fileID: 2800000, guid: 3061b6d0dca3b2845b5a2605396bfe2f, type: 3}
-  - {fileID: 2800000, guid: 1e75889de74a22b47a984b306bdeed0e, type: 3}
-  - {fileID: 2800000, guid: 3748a1eb507d4014bb912ee0ae38367b, type: 3}
-  - {fileID: 2800000, guid: ff6272e1998a4b54f983110062586710, type: 3}
-  - {fileID: 2800000, guid: a103e2e7ba6fc214fa1d244e18b5e44a, type: 3}
-  - {fileID: 2800000, guid: 9b1d057c34b25fc48bf2f75e5cf11bf2, type: 3}
-  - {fileID: 2800000, guid: c57da39812447f749be018e06d40c44f, type: 3}
-  - {fileID: 2800000, guid: f1a0603f6499be3478be177c4d581086, type: 3}
-  - {fileID: 2800000, guid: a8982dd938f150443b4e3df50ada0fc5, type: 3}
-  - {fileID: 2800000, guid: ee5921c8f5288ae448b35a4cedcf79eb, type: 3}
-  - {fileID: 2800000, guid: ac63594b77359ee4aa57957d9d8cc5aa, type: 3}
-  - {fileID: 2800000, guid: 37756b10add12be4397ca607b5de88f5, type: 3}
-  - {fileID: 2800000, guid: 231dd02c7de89034ea745f88e242d31b, type: 3}
-  - {fileID: 2800000, guid: a5e6eeea5bc552443bc366a50882e2e7, type: 3}
-  - {fileID: 2800000, guid: 680b3d057e7cfb84f8fd9a942a4936d3, type: 3}
-  - {fileID: 2800000, guid: e7e6a30d9a568b34fb15efca59b8b836, type: 3}
-  - {fileID: 2800000, guid: 98b55ccf41303c64ea8b9699e94898cc, type: 3}
-  - {fileID: 2800000, guid: 7936a2121ec7a0c428f70a211fd693eb, type: 3}
-  - {fileID: 2800000, guid: 99d9a051b9cb7994ea774818470cf7b2, type: 3}
-  - {fileID: 2800000, guid: 4c83062a6ba0d8444b5de41c29902ccb, type: 3}
-  - {fileID: 2800000, guid: eeb15973ce92e2b4081aad314b64a1de, type: 3}
-  - {fileID: 2800000, guid: 80c340d83ae4a0645bcf1d1fa54e436c, type: 3}
-  - {fileID: 2800000, guid: 913e3b95f5cd49b4d84d9a5dd334115e, type: 3}
-  - {fileID: 2800000, guid: 3a2eb0b745651a24bab5545b643eb137, type: 3}
-  - {fileID: 2800000, guid: d3d0359ea7d54524fa105ec5bf890657, type: 3}
-  - {fileID: 2800000, guid: db11127749af9734687cbd579d7f01c0, type: 3}
+  normals: []
 --- !u!114 &2767301406756075293
 MonoBehaviour:
   m_ObjectHideFlags: 0
