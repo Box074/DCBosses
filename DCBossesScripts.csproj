@@ -57,6 +57,8 @@
     <Compile Include="Assets\Scripts\SendFSMEvent.cs" />
     <Compile Include="Assets\Scripts\SetControlHero.cs" />
     <Compile Include="Assets\Scripts\FaceHero.cs" />
+    <Compile Include="Assets\Scripts\Atlas\DCAtlas.cs" />
+    <Compile Include="Assets\Scripts\Atlas\DCAtlasInstance.cs" />
     <Compile Include="Assets\Scripts\Common\ColliderControl.cs" />
     <Compile Include="Assets\Scripts\NailParryFsm.cs" />
     <Compile Include="Assets\Scripts\CheckIsVisible.cs" />
@@ -72,6 +74,13 @@
     <Compile Include="Assets\Scripts\ScreenCut.cs" />
     <Compile Include="Assets\Scripts\Common\CartoonRenderer.cs" />
     <Compile Include="Assets\Scripts\Queen\CutSpaceMask.cs" />
+    <Compile Include="Assets\Scripts\Atlas\DCSpriteRenderer.cs" />
+    <Compile Include="Assets\Scripts\Atlas\DCSpriteAnimator.cs" />
+    <Compile Include="Assets\Scripts\Atlas\DCSpriteClipCollection.cs" />
+    <Compile Include="Assets\Scripts\Atlas\DCSpriteAnimatorHost.cs" />
+    <Compile Include="Assets\Scripts\DCSpritePlayClip.cs" />
+    <Compile Include="Assets\Scripts\Atlas\DCSpriteAnimatorAutoDisable.cs" />
+    <Compile Include="Assets\Scripts\DCSpritePlayAnimationClip.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Scripts\DCBossesScripts.asmdef" />

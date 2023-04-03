@@ -11,7 +11,7 @@ public class HeadFollow : MonoBehaviour
 {
     public TextAsset headTrack;
     public GameObject head;
-    public SpriteRenderer spriteRenderer;
+    public DCSpriteRenderer m_sr;
     private Vector3 trackPos0 = new Vector3(-0.32100001f, 0.574999988f);
     private Vector3 trackPos1 = new Vector3(-0.395000011f, 0.620000005f);
     private Dictionary<string, Dictionary<string, List<int>>> headC = null;
@@ -35,10 +35,10 @@ public class HeadFollow : MonoBehaviour
         var curTime = curState.normalizedTime;
         var totalFrame = curClip.length / (1 / curClip.frameRate);
         var curFrame = (int)(Mathf.Floor(totalFrame * curTime) % totalFrame);*/
-        var tex = spriteRenderer.sprite?.name;
-        if(tex == null) return;
-        var curClipName = tex.Split('_')[0];
-        if(!headC.TryGetValue(curClipName.ToLower().Trim(), out var h))
+        var tile = m_sr.atlas.atlas.tiles[m_sr.curSpriteId];
+
+        var curClipName = tile.name;
+        if (!headC.TryGetValue(curClipName.ToLower().Trim(), out var h))
         {
             Debug.LogError("Missing Head Track:" + curClipName);
             return;
@@ -46,7 +46,7 @@ public class HeadFollow : MonoBehaviour
 
         var hp = h["Bip001 Head"];
         
-        var id = int.Parse(tex.Split('_')[1], System.Globalization.NumberStyles.Integer) * 3;
+        var id = tile.index * 3;
         //Debug.Log($"{id}/{hp.Count}");
         if(hp.Count <= id + 2 || id < 0) return;
         var x = hp[id] - 215;

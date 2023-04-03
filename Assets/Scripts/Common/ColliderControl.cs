@@ -9,15 +9,15 @@ public class ColliderControl : MonoBehaviour
     public PolygonCollider2D[] col;
     public SpriteRenderer render;
     private void FixedUpdate() {
-        UpdateCollider();
+        //OnUpdateSprite();
     }
     private void Update() {
         if(Application.isEditor && !Application.isPlaying) 
         {
-            UpdateCollider();
+            OnUpdateSprite();
         }
     }
-    public void UpdateCollider()
+    public void OnUpdateSprite()
     {
         Sprite sprite = render.sprite;
         if(sprite == null) return;
@@ -59,12 +59,13 @@ public class ColliderControl : MonoBehaviour
         }
 
         var paths = new List<Vector2>();
+        var offset = (Vector2) render.transform.localPosition;
         foreach(var v in edges)
         {
             if(v.count == 1)
             {
-                paths.Add(v.p1);
-                paths.Add(v.p2);
+                paths.Add(v.p1 + offset);
+                paths.Add(v.p2 + offset);
             }
         }
         foreach(var v in col) v.points = paths.ToArray();

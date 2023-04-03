@@ -115,6 +115,7 @@
     <Compile Include="Assets\PlayMaker\Editor\PlayMakerUpdater.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Quaternion\Editor\QuaternionLookRotationCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Quaternion\Editor\QuaternionInverseCustomEditor.cs" />
+    <Compile Include="Assets\Editor\DC\Atlas\AtlasHelper.cs" />
     <Compile Include="Assets\PlayMaker\Editor\PlayMakerAddonManager.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorIKGoalActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\PlayMakerUpgradeGuide.cs" />
@@ -127,6 +128,7 @@
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorIsMatchingTargetActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorBodyActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\ContextToolWindow.cs" />
+    <Compile Include="Assets\Editor\DC\Atlas\Tile.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Editor\MoveTowardsActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\SceneManager\Editor\GetSceneNameCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\SceneManager\Editor\UnLoadSceneCustomEditor.cs" />
@@ -135,12 +137,14 @@
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\BaseClasses\OnAnimatorUpdateActionEditorBase.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorCurrentTransitionInfoActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Editor\GetDistanceEditor.cs" />
+    <Compile Include="Assets\Editor\DC\AtlasImporter.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Quaternion\Editor\QuaternionSlerpCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\PlayMakerProjectTools.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorGravityWeightActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Quaternion\Editor\QuaternionEulerCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorCurrentTransitionInfoIsNameActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\FsmErrorWindow.cs" />
+    <Compile Include="Assets\Editor\Importer.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorIsLayerInTransitionActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Quaternion\Editor\GetQuaternionFromRotationCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\SceneManager\Editor\LoadSceneCustomEditor.cs" />
@@ -153,6 +157,7 @@
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorCurrentStateInfoIsNameActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\FsmLogWindow.cs" />
     <Compile Include="Assets\PlayMaker\Actions\SceneManager\Editor\MoveGameObjectToSceneCustomEditor.cs" />
+    <Compile Include="Assets\Editor\DC\DCSpriteClipActionEditor.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\PlayMaker\Editor\it\PlayMakerEditorResources.resources.dll" />
@@ -168,6 +173,7 @@
      <None Include="Assets\PlayMaker\Editor\de\PlayMakerEditorResources.resources.dll" />
      <None Include="Assets\PlayMaker\Editor\zh-TW\PlayMakerEditorResources.resources.dll" />
      <None Include="Assets\PlayMaker\Editor\Install\readme.txt" />
+     <None Include="Assets\Material\Editor\BossTextureProcessing.shader" />
      <None Include="Assets\PlayMaker\Editor\tr\PlayMakerEditorResources.resources.dll" />
      <None Include="Assets\PlayMaker\Editor\PlayMakerEditorResources.dll" />
      <None Include="Assets\PlayMaker\Editor\nl\PlayMakerEditorResources.resources.dll" />

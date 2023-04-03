@@ -18,6 +18,8 @@ public class EditorToolWindow : EditorWindow
     public List<Texture2D> m_SA_Normals;
     public string m_SA_OutputPath;
     public Material m_SA_Material;
+    public bool m_UseGlowColor;
+    public Color m_GlowColor;
 
     SerializedObject serObj;
     SerializedProperty p_SA_Textures;
@@ -34,6 +36,10 @@ public class EditorToolWindow : EditorWindow
     {
 
         var mat = Instantiate(m_SA_Material);
+
+        mat.SetFloat("_UseGlowColor", m_UseGlowColor ? 1 : 0);
+        //mat.SetColor("_GlowColor", m_GlowColor);
+
         Directory.CreateDirectory(m_SA_OutputPath);
         for(int i = 0; i < m_SA_Textures.Count; i++)
         {
@@ -50,7 +56,7 @@ public class EditorToolWindow : EditorWindow
             var prev = RenderTexture.active;
             RenderTexture.active = rtex;
 
-            var otex = new Texture2D(tex.width, tex.height, TextureFormat.RGB24, false);
+            var otex = new Texture2D(tex.width, tex.height, TextureFormat.RGBA32, false);
             otex.ReadPixels(new Rect(0, 0, tex.width, tex.height), 0, 0);
             otex.Apply();
             RenderTexture.active = prev;
@@ -83,6 +89,10 @@ public class EditorToolWindow : EditorWindow
             serObj.ApplyModifiedProperties();
         }
 
+        m_UseGlowColor = GUILayout.Toggle(m_UseGlowColor, "Use Glow Color");
+
+        m_GlowColor = EditorGUILayout.ColorField("Glow Color", m_GlowColor);
+
         GUILayout.Label("Output Folder");
         m_SA_OutputPath = GUILayout.TextField(m_SA_OutputPath);
 
@@ -92,6 +102,12 @@ public class EditorToolWindow : EditorWindow
         {
             ShadowApply();
         }
+
+        GUILayout.Space(8);
+
+        GUILayout.Label("[DC] Extract Sprites", EditorStyles.boldLabel);
+
+
 
         GUILayout.EndVertical();
 

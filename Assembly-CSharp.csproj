@@ -494,12 +494,12 @@
     <Compile Include="Assets\PlayMaker\Actions\UI\EventSystem\UiOnDragEvent.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Quaternion\QuaternionAngleAxis.cs" />
     <Compile Include="Assets\PlayMaker\Actions\SceneManager\GetSceneRootGameObjects.cs" />
-    <Compile Include="Assets\PlayMaker\Actions\Animator\GetAnimatorIsLayerInTransition.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Material\SetMaterialTexture.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Transform\TransformDirection.cs" />
-    <Compile Include="Assets\PlayMaker\Actions\UI\UiImageGetFillAmount.cs" />
+    <Compile Include="Assets\PlayMaker\Actions\Animator\GetAnimatorIsLayerInTransition.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Audio\SetAudioVolume.cs" />
     <Compile Include="Assets\PlayMaker\Actions\UI\Selectable\UiExplicitNavigationSetProperties.cs" />
+    <Compile Include="Assets\PlayMaker\Actions\UI\UiImageGetFillAmount.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Quaternion\QuaternionInverse.cs" />
     <Compile Include="Assets\PlayMaker\Actions\SceneManager\SendSceneLoadedEvent.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\SetAnimatorInt.cs" />
@@ -864,16 +864,17 @@
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Newtonsoft.Json.dll" />
-     <None Include="Assets\Material\CutSpaceEffect.shader" />
+     <None Include="Assets\Material\Queen\CutSpaceEffect.shader" />
      <None Include="Assets\PlayMaker\Readme.txt" />
-     <None Include="Assets\Material\MassiveCutShader.shader" />
+     <None Include="Assets\Material\Queen\MassiveCutShader.shader" />
      <None Include="Assets\PlayMaker\Templates\Readme.txt" />
-     <None Include="Assets\Material\CutScreen.shader" />
+     <None Include="Assets\Material\Queen\CutScreen.shader" />
      <None Include="Assets\PlayMaker\ConditionalExpression.dll" />
+     <None Include="Assets\Material\CartoonShaderV2.shader" />
      <None Include="Assets\PlayMaker\Resources\PlayMakerAssemblies.txt" />
-     <None Include="Assets\Material\BossTextureProcessing.shader" />
      <None Include="Assets\Material\StatusShader.shader" />
-     <None Include="Assets\Material\CartoonShader.shader" />
+     <None Include="Assets\Material\Queen\CartoonShader.shader" />
+     <None Include="Assets\Material\Queen\QueenAfterImage.shader" />
     <Reference Include="UnityEngine">
       <HintPath>F:\U3D\2020.3.2f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

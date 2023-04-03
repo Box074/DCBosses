@@ -1,0 +1,2624 @@
+fileFormatVersion: 2
+guid: b5494b8aa7952b54093e59080ffbb28b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1dad61242e62abe43a47223b3a1b633e, type: 3}
+  atlasTextures:
+  - {fileID: 2800000, guid: b6228034337cac94a9cfdfc9181dbcee, type: 3}
+  atlasObj:
+    atlasTextureNames:
+    - fxQueen.png
+    atlasTextures:
+    - {instanceID: 0}
+    tiles:
+    - originalName: fxAllAround/fxAllAround_0000
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 0
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0001
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 1687
+        width: 98
+        height: 98
+      index: 1
+      offset: {x: 167, y: 110}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0002
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1802
+        width: 92
+        height: 91
+      index: 2
+      offset: {x: 174, y: 110}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0003
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1895
+        width: 83
+        height: 83
+      index: 3
+      offset: {x: 183, y: 110}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0004
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 300
+        width: 75
+        height: 75
+      index: 4
+      offset: {x: 191, y: 111}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0005
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 1959
+        width: 66
+        height: 66
+      index: 5
+      offset: {x: 197, y: 112}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0006
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 749
+        width: 67
+        height: 58
+      index: 6
+      offset: {x: 198, y: 113}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0007
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 1952
+        width: 69
+        height: 51
+      index: 7
+      offset: {x: 198, y: 114}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0008
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 377
+        width: 70
+        height: 46
+      index: 8
+      offset: {x: 199, y: 116}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0009
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1901
+        y: 1959
+        width: 66
+        height: 55
+      index: 9
+      offset: {x: 205, y: 115}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0010
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 1787
+        width: 61
+        height: 68
+      index: 10
+      offset: {x: 206, y: 111}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0011
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 1730
+        width: 116
+        height: 87
+      index: 11
+      offset: {x: 191, y: 185}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0012
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 1289
+        width: 130
+        height: 217
+      index: 12
+      offset: {x: 184, y: 54}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0013
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 962
+        width: 113
+        height: 236
+      index: 13
+      offset: {x: 193, y: 17}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0014
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 1200
+        width: 141
+        height: 236
+      index: 14
+      offset: {x: 179, y: 17}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0015
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1195
+        width: 162
+        height: 221
+      index: 15
+      offset: {x: 168, y: 32}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0016
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 962
+        width: 177
+        height: 231
+      index: 16
+      offset: {x: 161, y: 22}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0017
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 935
+        width: 180
+        height: 231
+      index: 17
+      offset: {x: 161, y: 22}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0018
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 1418
+        width: 31
+        height: 211
+      index: 18
+      offset: {x: 237, y: 42}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0019
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 1412
+        width: 28
+        height: 155
+      index: 19
+      offset: {x: 237, y: 69}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxAllAround/fxAllAround_0020
+      name: fxAllAround/fxAllAround
+      rect:
+        serializedVersion: 2
+        x: 2020
+        y: 359
+        width: 19
+        height: 120
+      index: 20
+      offset: {x: 246, y: 78}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0000
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 0
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0001
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 1
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0002
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 2
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0003
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 3
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0004
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 4
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0005
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 5
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0006
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 6
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0007
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 7
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0008
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 726
+        width: 270
+        height: 126
+      index: 8
+      offset: {x: 137, y: 137}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0009
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1759
+        width: 270
+        height: 126
+      index: 9
+      offset: {x: 137, y: 137}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0010
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1483
+        width: 243
+        height: 111
+      index: 10
+      offset: {x: 153, y: 142}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0011
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 359
+        width: 284
+        height: 135
+      index: 11
+      offset: {x: 153, y: 118}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0012
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1872
+        width: 290
+        height: 138
+      index: 12
+      offset: {x: 153, y: 115}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0013
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 1512
+        width: 176
+        height: 119
+      index: 13
+      offset: {x: 267, y: 115}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0014
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1633
+        width: 176
+        height: 74
+      index: 14
+      offset: {x: 267, y: 115}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0015
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 1706
+        width: 176
+        height: 73
+      index: 15
+      offset: {x: 267, y: 115}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxCutGrenade/fxCutGrenade_0016
+      name: fxCutGrenade/fxCutGrenade
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 1808
+        width: 104
+        height: 39
+      index: 16
+      offset: {x: 267, y: 149}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0000
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 0
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0001
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 1
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0002
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1859
+        width: 46
+        height: 25
+      index: 2
+      offset: {x: 195, y: 121}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0003
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 1819
+        width: 68
+        height: 45
+      index: 3
+      offset: {x: 164, y: 121}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0004
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 1914
+        width: 70
+        height: 100
+      index: 4
+      offset: {x: 154, y: 122}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0005
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1711
+        width: 77
+        height: 133
+      index: 5
+      offset: {x: 154, y: 122}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0006
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1464
+        width: 143
+        height: 106
+      index: 6
+      offset: {x: 153, y: 149}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0007
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 1849
+        width: 141
+        height: 58
+      index: 7
+      offset: {x: 158, y: 196}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0008
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 239
+        width: 102
+        height: 59
+      index: 8
+      offset: {x: 199, y: 194}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0009
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1988
+        width: 106
+        height: 59
+      index: 9
+      offset: {x: 204, y: 183}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0010
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 1934
+        width: 45
+        height: 47
+      index: 10
+      offset: {x: 265, y: 182}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0011
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 1857
+        width: 49
+        height: 55
+      index: 11
+      offset: {x: 264, y: 179}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0012
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 1113
+        width: 54
+        height: 61
+      index: 12
+      offset: {x: 262, y: 176}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0013
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 1176
+        width: 51
+        height: 59
+      index: 13
+      offset: {x: 264, y: 177}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0014
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 1294
+        width: 48
+        height: 55
+      index: 14
+      offset: {x: 265, y: 179}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0015
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 15
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0016
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 16
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0017
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 17
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0018
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 1418
+        width: 75
+        height: 227
+      index: 18
+      offset: {x: 252, y: 58}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0019
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1200
+        width: 113
+        height: 262
+      index: 19
+      offset: {x: 227, y: 21}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0020
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 1448
+        width: 108
+        height: 214
+      index: 20
+      offset: {x: 230, y: 65}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0021
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 1196
+        width: 124
+        height: 214
+      index: 21
+      offset: {x: 222, y: 65}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0022
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 1418
+        width: 41
+        height: 214
+      index: 22
+      offset: {x: 267, y: 65}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0023
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 1849
+        width: 29
+        height: 153
+      index: 23
+      offset: {x: 270, y: 126}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0024
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 1800
+        width: 25
+        height: 140
+      index: 24
+      offset: {x: 270, y: 139}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxDemine/fxDemine_0025
+      name: fxDemine/fxDemine
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 239
+        width: 17
+        height: 110
+      index: 25
+      offset: {x: 278, y: 169}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocArc/fxEstocArc_0000
+      name: fxEstocArc/fxEstocArc
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 540
+        width: 321
+        height: 228
+      index: 0
+      offset: {x: 104, y: 43}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocArc/fxEstocArc_0001
+      name: fxEstocArc/fxEstocArc
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1061
+        width: 285
+        height: 190
+      index: 1
+      offset: {x: 120, y: 62}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocArc/fxEstocArc_0002
+      name: fxEstocArc/fxEstocArc
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1253
+        width: 273
+        height: 189
+      index: 2
+      offset: {x: 132, y: 63}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocArc/fxEstocArc_0003
+      name: fxEstocArc/fxEstocArc
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1253
+        width: 273
+        height: 189
+      index: 3
+      offset: {x: 132, y: 63}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocArc/fxEstocArc_0004
+      name: fxEstocArc/fxEstocArc
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1061
+        width: 258
+        height: 190
+      index: 4
+      offset: {x: 147, y: 62}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocArc/fxEstocArc_0005
+      name: fxEstocArc/fxEstocArc
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 743
+        width: 258
+        height: 190
+      index: 5
+      offset: {x: 147, y: 62}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocArc/fxEstocArc_0006
+      name: fxEstocArc/fxEstocArc
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 770
+        width: 258
+        height: 190
+      index: 6
+      offset: {x: 147, y: 62}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocArc/fxEstocArc_0007
+      name: fxEstocArc/fxEstocArc
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1051
+        width: 258
+        height: 184
+      index: 7
+      offset: {x: 147, y: 68}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocArc/fxEstocArc_0008
+      name: fxEstocArc/fxEstocArc
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1596
+        width: 258
+        height: 161
+      index: 8
+      offset: {x: 147, y: 90}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocFeet/fxEstocFeet_0000
+      name: fxEstocFeet/fxEstocFeet
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 133
+        width: 395
+        height: 104
+      index: 0
+      offset: {x: 72, y: 174}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocFeet/fxEstocFeet_0001
+      name: fxEstocFeet/fxEstocFeet
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 63
+        width: 377
+        height: 68
+      index: 1
+      offset: {x: 80, y: 192}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocFeet/fxEstocFeet_0002
+      name: fxEstocFeet/fxEstocFeet
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 63
+        width: 377
+        height: 68
+      index: 2
+      offset: {x: 80, y: 192}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocFeet/fxEstocFeet_0003
+      name: fxEstocFeet/fxEstocFeet
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1237
+        width: 257
+        height: 50
+      index: 3
+      offset: {x: 200, y: 210}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocFeet/fxEstocFeet_0004
+      name: fxEstocFeet/fxEstocFeet
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 2005
+        width: 221
+        height: 37
+      index: 4
+      offset: {x: 236, y: 223}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocFeet/fxEstocFeet_0005
+      name: fxEstocFeet/fxEstocFeet
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 1779
+        width: 130
+        height: 27
+      index: 5
+      offset: {x: 327, y: 233}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocFeet/fxEstocFeet_0006
+      name: fxEstocFeet/fxEstocFeet
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2034
+        width: 92
+        height: 13
+      index: 6
+      offset: {x: 365, y: 247}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocFeet/fxEstocFeet_0007
+      name: fxEstocFeet/fxEstocFeet
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1846
+        width: 70
+        height: 10
+      index: 7
+      offset: {x: 387, y: 250}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocFeet/fxEstocFeet_0008
+      name: fxEstocFeet/fxEstocFeet
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 1841
+        width: 20
+        height: 6
+      index: 8
+      offset: {x: 437, y: 254}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocHead/fxEstocHead_0000
+      name: fxEstocHead/fxEstocHead
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 1
+        width: 401
+        height: 60
+      index: 0
+      offset: {x: 72, y: 170}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocHead/fxEstocHead_0001
+      name: fxEstocHead/fxEstocHead
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 809
+        width: 384
+        height: 20
+      index: 1
+      offset: {x: 80, y: 190}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocHead/fxEstocHead_0002
+      name: fxEstocHead/fxEstocHead
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 809
+        width: 384
+        height: 20
+      index: 2
+      offset: {x: 80, y: 190}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocHead/fxEstocHead_0003
+      name: fxEstocHead/fxEstocHead
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2012
+        width: 263
+        height: 20
+      index: 3
+      offset: {x: 201, y: 190}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocHead/fxEstocHead_0004
+      name: fxEstocHead/fxEstocHead
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1819
+        width: 225
+        height: 20
+      index: 4
+      offset: {x: 239, y: 190}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocHead/fxEstocHead_0005
+      name: fxEstocHead/fxEstocHead
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 1865
+        width: 130
+        height: 19
+      index: 5
+      offset: {x: 334, y: 190}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocHead/fxEstocHead_0006
+      name: fxEstocHead/fxEstocHead
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 1163
+        width: 92
+        height: 15
+      index: 6
+      offset: {x: 372, y: 192}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocHead/fxEstocHead_0007
+      name: fxEstocHead/fxEstocHead
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 2034
+        width: 70
+        height: 12
+      index: 7
+      offset: {x: 394, y: 195}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxEstocHead/fxEstocHead_0008
+      name: fxEstocHead/fxEstocHead
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 1841
+        width: 20
+        height: 6
+      index: 8
+      offset: {x: 444, y: 201}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxGroundStomp/fxGroundStomp_0000
+      name: fxGroundStomp/fxGroundStomp
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 0
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxGroundStomp/fxGroundStomp_0001
+      name: fxGroundStomp/fxGroundStomp
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 1909
+        width: 141
+        height: 54
+      index: 1
+      offset: {x: 133, y: 151}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxGroundStomp/fxGroundStomp_0002
+      name: fxGroundStomp/fxGroundStomp
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 1805
+        width: 141
+        height: 54
+      index: 2
+      offset: {x: 133, y: 151}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxGroundStomp/fxGroundStomp_0003
+      name: fxGroundStomp/fxGroundStomp
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 1441
+        width: 173
+        height: 69
+      index: 3
+      offset: {x: 118, y: 157}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxGroundStomp/fxGroundStomp_0004
+      name: fxGroundStomp/fxGroundStomp
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1841
+        width: 173
+        height: 69
+      index: 4
+      offset: {x: 118, y: 157}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxGroundStomp/fxGroundStomp_0005
+      name: fxGroundStomp/fxGroundStomp
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1874
+        width: 179
+        height: 70
+      index: 5
+      offset: {x: 114, y: 179}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxGroundStomp/fxGroundStomp_0006
+      name: fxGroundStomp/fxGroundStomp
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 1654
+        width: 174
+        height: 50
+      index: 6
+      offset: {x: 118, y: 218}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxGroundStomp/fxGroundStomp_0007
+      name: fxGroundStomp/fxGroundStomp
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 954
+        width: 280
+        height: 95
+      index: 7
+      offset: {x: 140, y: 173}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxGroundStomp/fxGroundStomp_0008
+      name: fxGroundStomp/fxGroundStomp
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1444
+        width: 279
+        height: 69
+      index: 8
+      offset: {x: 141, y: 173}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxGroundStomp/fxGroundStomp_0009
+      name: fxGroundStomp/fxGroundStomp
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1568
+        width: 266
+        height: 47
+      index: 9
+      offset: {x: 147, y: 183}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxGroundStomp/fxGroundStomp_0010
+      name: fxGroundStomp/fxGroundStomp
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 1617
+        width: 266
+        height: 45
+      index: 10
+      offset: {x: 147, y: 183}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxGroundStomp/fxGroundStomp_0011
+      name: fxGroundStomp/fxGroundStomp
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 1664
+        width: 266
+        height: 45
+      index: 11
+      offset: {x: 147, y: 183}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxGroundStomp/fxGroundStomp_0012
+      name: fxGroundStomp/fxGroundStomp
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1781
+        width: 197
+        height: 36
+      index: 12
+      offset: {x: 216, y: 188}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxGroundStomp/fxGroundStomp_0013
+      name: fxGroundStomp/fxGroundStomp
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 1962
+        width: 158
+        height: 24
+      index: 13
+      offset: {x: 255, y: 191}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxGroundStomp/fxGroundStomp_0014
+      name: fxGroundStomp/fxGroundStomp
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 878
+        width: 23
+        height: 5
+      index: 14
+      offset: {x: 390, y: 202}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0000
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 413
+        width: 1303
+        height: 7
+      index: 0
+      offset: {x: 90, y: 48}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0001
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 85
+        width: 1331
+        height: 22
+      index: 1
+      offset: {x: 90, y: 40}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0002
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 1323
+        height: 56
+      index: 2
+      offset: {x: 79, y: 20}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0003
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 192
+        width: 1303
+        height: 39
+      index: 3
+      offset: {x: 90, y: 32}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0004
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 132
+        width: 1330
+        height: 18
+      index: 4
+      offset: {x: 90, y: 42}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0005
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 59
+        width: 1323
+        height: 24
+      index: 5
+      offset: {x: 79, y: 38}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0006
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 258
+        width: 1303
+        height: 21
+      index: 6
+      offset: {x: 90, y: 41}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0007
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 152
+        width: 1330
+        height: 18
+      index: 7
+      offset: {x: 90, y: 42}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0008
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 304
+        width: 1323
+        height: 19
+      index: 8
+      offset: {x: 79, y: 43}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0009
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 281
+        width: 1303
+        height: 21
+      index: 9
+      offset: {x: 90, y: 41}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0010
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 172
+        width: 1330
+        height: 18
+      index: 10
+      offset: {x: 90, y: 42}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0011
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 325
+        width: 1323
+        height: 19
+      index: 11
+      offset: {x: 79, y: 43}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0012
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 233
+        width: 1303
+        height: 23
+      index: 12
+      offset: {x: 90, y: 41}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0013
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 109
+        width: 1331
+        height: 21
+      index: 13
+      offset: {x: 90, y: 39}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0014
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 346
+        width: 1323
+        height: 19
+      index: 14
+      offset: {x: 79, y: 43}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0015
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 392
+        width: 1303
+        height: 19
+      index: 15
+      offset: {x: 90, y: 43}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0016
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 367
+        width: 1330
+        height: 12
+      index: 16
+      offset: {x: 91, y: 45}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0017
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 381
+        width: 1322
+        height: 9
+      index: 17
+      offset: {x: 80, y: 48}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0018
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 422
+        width: 1302
+        height: 8
+      index: 18
+      offset: {x: 91, y: 48}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxMassiveCut/fxMassiveCut_0019
+      name: fxMassiveCut/fxMassiveCut
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 432
+        width: 1302
+        height: 3
+      index: 19
+      offset: {x: 91, y: 50}
+      originalSize: {x: 1500, y: 100}
+      atlasId: 0
+    - originalName: fxOvershield/fxOvershield_0000
+      name: fxOvershield/fxOvershield
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1168
+        width: 121
+        height: 278
+      index: 0
+      offset: {x: 193, y: 36}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxOvershield/fxOvershield_0001
+      name: fxOvershield/fxOvershield
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 904
+        width: 116
+        height: 257
+      index: 1
+      offset: {x: 196, y: 46}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxOvershield/fxOvershield_0002
+      name: fxOvershield/fxOvershield
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 854
+        width: 127
+        height: 257
+      index: 2
+      offset: {x: 190, y: 46}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxOvershield/fxOvershield_0003
+      name: fxOvershield/fxOvershield
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 854
+        width: 127
+        height: 257
+      index: 3
+      offset: {x: 190, y: 46}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxOvershield/fxOvershield_0004
+      name: fxOvershield/fxOvershield
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 1196
+        width: 127
+        height: 257
+      index: 4
+      offset: {x: 190, y: 46}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxOvershield/fxOvershield_0005
+      name: fxOvershield/fxOvershield
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 493
+        width: 36
+        height: 183
+      index: 5
+      offset: {x: 233, y: 120}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxOvershield/fxOvershield_0006
+      name: fxOvershield/fxOvershield
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 678
+        width: 30
+        height: 167
+      index: 6
+      offset: {x: 233, y: 136}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxOvershield/fxOvershield_0007
+      name: fxOvershield/fxOvershield
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 359
+        width: 21
+        height: 132
+      index: 7
+      offset: {x: 242, y: 171}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0000
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 0
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0001
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 1
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0002
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 2
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0003
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 3
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0004
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 4
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0005
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 5
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0006
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 6
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0007
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 7
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0008
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 8
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0009
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 351
+        width: 9
+        height: 6
+      index: 9
+      offset: {x: 168, y: 246}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0010
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 1973
+        width: 34
+        height: 31
+      index: 10
+      offset: {x: 156, y: 231}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0011
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 854
+        width: 39
+        height: 36
+      index: 11
+      offset: {x: 155, y: 226}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0012
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 1983
+        width: 44
+        height: 45
+      index: 12
+      offset: {x: 155, y: 218}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0013
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 1237
+        width: 49
+        height: 55
+      index: 13
+      offset: {x: 155, y: 208}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0014
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 1866
+        width: 61
+        height: 66
+      index: 14
+      offset: {x: 147, y: 197}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0015
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 1886
+        width: 64
+        height: 68
+      index: 15
+      offset: {x: 146, y: 196}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0016
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 1965
+        width: 81
+        height: 78
+      index: 16
+      offset: {x: 138, y: 186}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0017
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 1886
+        width: 81
+        height: 71
+      index: 17
+      offset: {x: 141, y: 193}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0018
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1965
+        width: 86
+        height: 82
+      index: 18
+      offset: {x: 142, y: 181}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0019
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1289
+        width: 184
+        height: 150
+      index: 19
+      offset: {x: 204, y: 116}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0020
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 1887
+        width: 179
+        height: 150
+      index: 20
+      offset: {x: 209, y: 116}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0021
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1887
+        width: 192
+        height: 144
+      index: 21
+      offset: {x: 235, y: 124}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0022
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1859
+        width: 170
+        height: 144
+      index: 22
+      offset: {x: 262, y: 124}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0023
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 1508
+        width: 144
+        height: 144
+      index: 23
+      offset: {x: 288, y: 124}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0024
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 1438
+        width: 127
+        height: 131
+      index: 24
+      offset: {x: 305, y: 126}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0025
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 1846
+        width: 64
+        height: 125
+      index: 25
+      offset: {x: 305, y: 126}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0026
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 1846
+        width: 64
+        height: 104
+      index: 26
+      offset: {x: 305, y: 126}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0027
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 2006
+        width: 63
+        height: 41
+      index: 27
+      offset: {x: 305, y: 126}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxPoisonCloud/fxPoisonCloud_0028
+      name: fxPoisonCloud/fxPoisonCloud
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1999
+        width: 20
+        height: 4
+      index: 28
+      offset: {x: 305, y: 126}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0000
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 0
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0001
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 821
+        width: 362
+        height: 377
+      index: 1
+      offset: {x: 67, y: 14}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0002
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 437
+        width: 337
+        height: 310
+      index: 2
+      offset: {x: 99, y: 46}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0003
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 91
+        width: 311
+        height: 266
+      index: 3
+      offset: {x: 76, y: 66}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0004
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 749
+        width: 245
+        height: 203
+      index: 4
+      offset: {x: 106, y: 104}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0005
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1711
+        width: 193
+        height: 146
+      index: 5
+      offset: {x: 136, y: 137}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0006
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 1455
+        width: 141
+        height: 115
+      index: 6
+      offset: {x: 166, y: 148}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0007
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 1636
+        width: 98
+        height: 92
+      index: 7
+      offset: {x: 196, y: 158}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0008
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 1569
+        width: 65
+        height: 68
+      index: 8
+      offset: {x: 221, y: 169}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0009
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 1351
+        width: 48
+        height: 48
+      index: 9
+      offset: {x: 230, y: 180}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0010
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1901
+        y: 2016
+        width: 31
+        height: 31
+      index: 10
+      offset: {x: 239, y: 191}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0011
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 1540
+        width: 93
+        height: 94
+      index: 11
+      offset: {x: 208, y: 139}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0012
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 437
+        width: 303
+        height: 304
+      index: 12
+      offset: {x: 103, y: 34}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0013
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 239
+        width: 299
+        height: 299
+      index: 13
+      offset: {x: 105, y: 36}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0014
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1548
+        width: 322
+        height: 322
+      index: 14
+      offset: {x: 94, y: 25}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0015
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1200
+        width: 346
+        height: 346
+      index: 15
+      offset: {x: 82, y: 13}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0016
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 437
+        width: 369
+        height: 370
+      index: 16
+      offset: {x: 70, y: 1}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0017
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 437
+        width: 392
+        height: 382
+      index: 17
+      offset: {x: 59, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0018
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 496
+        width: 269
+        height: 228
+      index: 18
+      offset: {x: 124, y: 72}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0019
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 831
+        width: 261
+        height: 228
+      index: 19
+      offset: {x: 128, y: 72}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0020
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1253
+        width: 245
+        height: 228
+      index: 20
+      offset: {x: 141, y: 72}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0021
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 831
+        width: 233
+        height: 228
+      index: 21
+      offset: {x: 141, y: 72}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0022
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 1113
+        width: 220
+        height: 81
+      index: 22
+      offset: {x: 121, y: 180}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxShockwave/fxShockwave_0023
+      name: fxShockwave/fxShockwave
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 1730
+        width: 51
+        height: 78
+      index: 23
+      offset: {x: 331, y: 119}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0000
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 1572
+        width: 9
+        height: 15
+      index: 0
+      offset: {x: 187, y: 173}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0001
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 847
+        width: 23
+        height: 29
+      index: 1
+      offset: {x: 177, y: 173}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0002
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 1980
+        width: 37
+        height: 53
+      index: 2
+      offset: {x: 167, y: 162}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0003
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 1639
+        width: 57
+        height: 89
+      index: 3
+      offset: {x: 151, y: 133}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0004
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 770
+        width: 92
+        height: 132
+      index: 4
+      offset: {x: 118, y: 91}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0005
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 1412
+        width: 95
+        height: 126
+      index: 5
+      offset: {x: 117, y: 97}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0006
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 1647
+        width: 96
+        height: 117
+      index: 6
+      offset: {x: 118, y: 106}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0007
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 1687
+        width: 103
+        height: 116
+      index: 7
+      offset: {x: 113, y: 109}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0008
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 1664
+        width: 108
+        height: 113
+      index: 8
+      offset: {x: 109, y: 113}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0009
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 1687
+        width: 115
+        height: 113
+      index: 9
+      offset: {x: 103, y: 114}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0010
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 1571
+        width: 122
+        height: 113
+      index: 10
+      offset: {x: 99, y: 113}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0011
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1686
+        width: 129
+        height: 112
+      index: 11
+      offset: {x: 94, y: 115}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0012
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 1572
+        width: 136
+        height: 113
+      index: 12
+      offset: {x: 89, y: 116}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0013
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 1572
+        width: 142
+        height: 113
+      index: 13
+      offset: {x: 85, y: 115}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0014
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1709
+        width: 149
+        height: 113
+      index: 14
+      offset: {x: 82, y: 110}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0015
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 1
+        width: 318
+        height: 88
+      index: 15
+      offset: {x: 145, y: 158}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0016
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1515
+        width: 287
+        height: 51
+      index: 16
+      offset: {x: 159, y: 176}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0017
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1946
+        width: 159
+        height: 51
+      index: 17
+      offset: {x: 287, y: 176}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0018
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 1861
+        width: 146
+        height: 51
+      index: 18
+      offset: {x: 300, y: 176}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0019
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1824
+        width: 149
+        height: 48
+      index: 19
+      offset: {x: 297, y: 176}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0020
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 1912
+        width: 152
+        height: 48
+      index: 20
+      offset: {x: 294, y: 176}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0021
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1999
+        width: 155
+        height: 48
+      index: 21
+      offset: {x: 291, y: 176}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0022
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 1800
+        width: 144
+        height: 44
+      index: 22
+      offset: {x: 291, y: 180}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0023
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 1914
+        width: 144
+        height: 44
+      index: 23
+      offset: {x: 291, y: 180}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0024
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 1960
+        width: 144
+        height: 44
+      index: 24
+      offset: {x: 291, y: 180}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0025
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 1819
+        width: 144
+        height: 44
+      index: 25
+      offset: {x: 291, y: 180}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    - originalName: fxThrust/fxThrust_0026
+      name: fxThrust/fxThrust
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 743
+        width: 3
+        height: 3
+      index: 26
+      offset: {x: 0, y: 0}
+      originalSize: {x: 500, y: 500}
+      atlasId: 0
+    animNames:
+    - fxAllAround/fxAllAround
+    - fxCutGrenade/fxCutGrenade
+    - fxDemine/fxDemine
+    - fxEstocArc/fxEstocArc
+    - fxEstocFeet/fxEstocFeet
+    - fxEstocHead/fxEstocHead
+    - fxGroundStomp/fxGroundStomp
+    - fxMassiveCut/fxMassiveCut
+    - fxOvershield/fxOvershield
+    - fxPoisonCloud/fxPoisonCloud
+    - fxShockwave/fxShockwave
+    - fxThrust/fxThrust
+    clips:
+    - name: fxAllAround/fxAllAround
+      frames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000014000000
+    - name: fxCutGrenade/fxCutGrenade
+      frames: 15000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000
+    - name: fxDemine/fxDemine
+      frames: 260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000
+    - name: fxEstocArc/fxEstocArc
+      frames: 400000004100000042000000430000004400000045000000460000004700000048000000
+    - name: fxEstocFeet/fxEstocFeet
+      frames: 490000004a0000004b0000004c0000004d0000004e0000004f0000005000000051000000
+    - name: fxEstocHead/fxEstocHead
+      frames: 52000000530000005400000055000000560000005700000058000000590000005a000000
+    - name: fxGroundStomp/fxGroundStomp
+      frames: 5b0000005c0000005d0000005e0000005f00000060000000610000006200000063000000640000006500000066000000670000006800000069000000
+    - name: fxMassiveCut/fxMassiveCut
+      frames: 6a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d000000
+    - name: fxOvershield/fxOvershield
+      frames: 7e0000007f000000800000008100000082000000830000008400000085000000
+    - name: fxPoisonCloud/fxPoisonCloud
+      frames: 860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000
+    - name: fxShockwave/fxShockwave
+      frames: a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000
+    - name: fxThrust/fxThrust
+      frames: bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000
