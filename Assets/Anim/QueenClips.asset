@@ -30,6 +30,22 @@ MonoBehaviour:
       m_startFrame: 0
       m_stopFrame: 0
       m_eventName: 
+  - m_name: Idle 2
+    m_actions:
+    - m_actionType: 2
+      m_clipName: 
+      m_loop: 0
+      m_time: 0
+      m_startFrame: 0
+      m_stopFrame: 0
+      m_eventName: QUEEN RETURN TO IDLE
+    - m_actionType: 0
+      m_clipName: idle
+      m_loop: 1
+      m_time: 0
+      m_startFrame: 0
+      m_stopFrame: 0
+      m_eventName: 
   - m_name: IntroLoop 0
     m_actions:
     - m_actionType: 0
@@ -586,7 +602,7 @@ MonoBehaviour:
       m_stopFrame: 0
       m_eventName: QUEEN ENTER DEFENSE
     - m_actionType: 4
-      m_clipName: idleDEFENSEIdle
+      m_clipName: Idle 2
       m_loop: 0
       m_time: 0
       m_startFrame: 0
@@ -617,6 +633,13 @@ MonoBehaviour:
       m_startFrame: 0
       m_stopFrame: 0
       m_eventName: QUEEN ENTER DEFENSE
+    - m_actionType: 2
+      m_clipName: deathLoop
+      m_loop: 1
+      m_time: 0
+      m_startFrame: 0
+      m_stopFrame: 0
+      m_eventName: QUEEN DEATH LOOP
     - m_actionType: 0
       m_clipName: deathLoop
       m_loop: 1
@@ -624,3 +647,55 @@ MonoBehaviour:
       m_startFrame: 0
       m_stopFrame: 0
       m_eventName: QUEEN ENTER DEFENSE
+  m_data: '[{"m_name":"Idle","m_actions":[{"m_actionType":2,"m_clipName":"","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    RETURN TO IDLE"},{"m_actionType":0,"m_clipName":"idle","m_loop":true,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Idle
+    2","m_actions":[{"m_actionType":2,"m_clipName":"","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    RETURN TO IDLE"},{"m_actionType":0,"m_clipName":"idle","m_loop":true,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"IntroLoop
+    0","m_actions":[{"m_actionType":0,"m_clipName":"introLoop0","m_loop":true,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Intro
+    0","m_actions":[{"m_actionType":0,"m_clipName":"introLoop0toLoop1","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":2,"m_clipName":"","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    INTRO NEXT"},{"m_actionType":0,"m_clipName":"introLoop1","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":2,"m_clipName":"","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    INTRO NEXT"},{"m_actionType":0,"m_clipName":"introLoop1toLoop2","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":2,"m_clipName":"introLoop1toLoop2","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    INTRO NEXT"},{"m_actionType":0,"m_clipName":"introLoop2","m_loop":true,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Intro
+    1","m_actions":[{"m_actionType":0,"m_clipName":"introLoop2toIdle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":2,"m_clipName":"","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    INTRO FINISHED"},{"m_actionType":0,"m_clipName":"dash","m_loop":true,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Dash","m_actions":[{"m_actionType":0,"m_clipName":"dash","m_loop":true,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Lunge","m_actions":[{"m_actionType":0,"m_clipName":"idleLoadLunge","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":0,"m_clipName":"loadLunge","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":2,"m_clipName":"","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    HIT START"},{"m_actionType":0,"m_clipName":"lunge","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Lunge
+    Idle","m_actions":[{"m_actionType":0,"m_clipName":"lungeIdle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":4,"m_clipName":"Idle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Massive","m_actions":[{"m_actionType":0,"m_clipName":"idleMassivecuts","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":2,"m_clipName":"","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    ENTER MASSIVE"},{"m_actionType":0,"m_clipName":"massivecuts","m_loop":true,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    HIT START"}]},{"m_name":"Massive To Idle","m_actions":[{"m_actionType":0,"m_clipName":"massivecutsIdle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":4,"m_clipName":"Idle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Shock
+    Wave","m_actions":[{"m_actionType":0,"m_clipName":"loadShockWave","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":2,"m_clipName":"QUEEN
+    HIT START","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    HIT START"},{"m_actionType":0,"m_clipName":"shockWave","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":4,"m_clipName":"Idle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Overshield","m_actions":[{"m_actionType":0,"m_clipName":"loadOvershield","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":1,"m_clipName":"overshield","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":14,"m_eventName":""},{"m_actionType":2,"m_clipName":"","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    HIT START"},{"m_actionType":0,"m_clipName":"overshield","m_loop":false,"m_time":0.0,"m_startFrame":15,"m_stopFrame":0,"m_eventName":""},{"m_actionType":4,"m_clipName":"Idle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Estoc
+    Arc","m_actions":[{"m_actionType":0,"m_clipName":"idleLoadEstocArc","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":0,"m_clipName":"loadEstocArc","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":2,"m_clipName":"","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    HIT START"},{"m_actionType":0,"m_clipName":"estocArc","m_loop":false,"m_time":0.0,"m_startFrame":14,"m_stopFrame":0,"m_eventName":""},{"m_actionType":2,"m_clipName":"","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    HIT END"},{"m_actionType":0,"m_clipName":"estocArcIdle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":4,"m_clipName":"Idle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Estoc
+    Feet","m_actions":[{"m_actionType":0,"m_clipName":"idleLoadEstocFeet","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":0,"m_clipName":"loadEstocFeet","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":2,"m_clipName":"","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    HIT START"},{"m_actionType":0,"m_clipName":"estocFeet","m_loop":false,"m_time":0.0,"m_startFrame":14,"m_stopFrame":0,"m_eventName":""},{"m_actionType":2,"m_clipName":"","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    HIT END"},{"m_actionType":0,"m_clipName":"estocFeetIdle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":4,"m_clipName":"Idle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Estoc
+    Head","m_actions":[{"m_actionType":0,"m_clipName":"idleLoadEstocHead","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":0,"m_clipName":"loadEstocHead","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":2,"m_clipName":"","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    HIT START"},{"m_actionType":0,"m_clipName":"estocHead","m_loop":false,"m_time":0.0,"m_startFrame":14,"m_stopFrame":0,"m_eventName":""},{"m_actionType":2,"m_clipName":"","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    HIT END"},{"m_actionType":0,"m_clipName":"estocHeadIdle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":4,"m_clipName":"Idle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Dash
+    To Idle","m_actions":[{"m_actionType":0,"m_clipName":"dashIdle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":4,"m_clipName":"Idle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"BackDash
+    To Idle","m_actions":[{"m_actionType":0,"m_clipName":"backDashIdle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":4,"m_clipName":"Idle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"BackDash","m_actions":[{"m_actionType":0,"m_clipName":"backDash","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"BackDash
+    To Defense","m_actions":[{"m_actionType":0,"m_clipName":"backDashIdleDEFENSE","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":4,"m_clipName":"Idle
+    Defense","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Dash
+    To Defense","m_actions":[{"m_actionType":0,"m_clipName":"dashIdleDEFENSE","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""},{"m_actionType":4,"m_clipName":"Idle
+    Defense","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Idle
+    Defense","m_actions":[{"m_actionType":2,"m_clipName":"idleDEFENSE","m_loop":true,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    ENTER DEFENSE"},{"m_actionType":0,"m_clipName":"idleDEFENSE","m_loop":true,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":""}]},{"m_name":"Defense
+    Parry","m_actions":[{"m_actionType":0,"m_clipName":"idleDEFENSEParry","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    ENTER DEFENSE"},{"m_actionType":2,"m_clipName":"idleDEFENSE","m_loop":true,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    SKILL NEXT"}]},{"m_name":"Cut Grenade","m_actions":[{"m_actionType":0,"m_clipName":"loadCutGrenade","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    ENTER DEFENSE"},{"m_actionType":2,"m_clipName":"idleDEFENSE","m_loop":true,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    HIT START"},{"m_actionType":1,"m_clipName":"cutGrenade","m_loop":true,"m_time":0.0,"m_startFrame":0,"m_stopFrame":6,"m_eventName":"QUEEN
+    HIT START"},{"m_actionType":2,"m_clipName":"cutGrenade","m_loop":true,"m_time":0.0,"m_startFrame":0,"m_stopFrame":6,"m_eventName":"QUEEN
+    HIT END"},{"m_actionType":0,"m_clipName":"cutGrenade","m_loop":false,"m_time":0.0,"m_startFrame":6,"m_stopFrame":0,"m_eventName":"QUEEN
+    HIT START"},{"m_actionType":4,"m_clipName":"Idle Defense","m_loop":false,"m_time":0.0,"m_startFrame":6,"m_stopFrame":0,"m_eventName":"QUEEN
+    HIT START"}]},{"m_name":"Defense To Idle","m_actions":[{"m_actionType":0,"m_clipName":"idleDEFENSEIdle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    ENTER DEFENSE"},{"m_actionType":4,"m_clipName":"Idle 2","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    ENTER DEFENSE"}]},{"m_name":"Idle To Defense","m_actions":[{"m_actionType":0,"m_clipName":"idleDEFENSEIdle","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    ENTER DEFENSE"},{"m_actionType":4,"m_clipName":"Idle Defense","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    ENTER DEFENSE"}]},{"m_name":"Death","m_actions":[{"m_actionType":0,"m_clipName":"death","m_loop":false,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    ENTER DEFENSE"},{"m_actionType":2,"m_clipName":"deathLoop","m_loop":true,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    DEATH LOOP"},{"m_actionType":0,"m_clipName":"deathLoop","m_loop":true,"m_time":0.0,"m_startFrame":0,"m_stopFrame":0,"m_eventName":"QUEEN
+    ENTER DEFENSE"}]}]'

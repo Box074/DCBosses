@@ -1,3 +1,5 @@
+using Modding.Converters;
+using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,17 +13,34 @@ public class DCAtlas : ISerializationCallbackReceiver
     {
         public string originalName;
         public string name;
-        public Rect rect;
+        [JsonConverter(typeof(Vector2Converter))]
+        public Vector2 xy;
+        [JsonConverter(typeof(Vector2Converter))]
+        public Vector2 wh;
+        [JsonIgnore]
+        public Rect rect
+        {
+            get => new Rect(xy, wh);
+            set
+            {
+                xy = value.position;
+                wh = value.size;
+            }
+        }
         public int index;
 
+        [JsonConverter(typeof(Vector2Converter))]
         public Vector2 offset;
+        [JsonConverter(typeof(Vector2Converter))]
         public Vector2 originalSize;
 
         [NonSerialized]
+        [JsonIgnore]
         public DCAtlas atlas;
 
         public int atlasId;
 
+        [JsonIgnore]
         public Texture2D atlasTexture
         {
             get
@@ -46,12 +65,15 @@ public class DCAtlas : ISerializationCallbackReceiver
         public List<int> frames = new List<int>();
 
         [NonSerialized]
+        [JsonIgnore]
         public DCAtlas atlas;
 
         public Tile GetFrame(int id) => atlas.tiles[frames[id]];
     }
 
     public List<string> atlasTextureNames = new List<string>();
+
+    [JsonIgnore]
     public List<Texture2D> atlasTextures = new List<Texture2D>();
     public List<Tile> tiles = new List<Tile>();
 

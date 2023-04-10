@@ -1,10 +1,11 @@
+using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class DCSpriteClipCollection : ScriptableObject
+public class DCSpriteClipCollection : ScriptableObject, ISerializationCallbackReceiver
 {
     [Serializable]
     public class Clip
@@ -14,6 +15,23 @@ public class DCSpriteClipCollection : ScriptableObject
     }
     public DCAtlasInstance m_atlas;
     public List<Clip> m_clips = new List<Clip>();
+
+    [SerializeField]
+    [HideInInspector]
+    private string m_data;
+
+    void ISerializationCallbackReceiver.OnAfterDeserialize()
+    {
+        if ((m_clips == null || m_clips.Count == 0) && !string.IsNullOrEmpty(m_data))
+        {
+            m_clips = JsonConvert.DeserializeObject<List<Clip>>(m_data);
+        }
+    }
+
+    void ISerializationCallbackReceiver.OnBeforeSerialize()
+    {
+        m_data = JsonConvert.SerializeObject(m_clips);
+    }
 }
 
 [Serializable]

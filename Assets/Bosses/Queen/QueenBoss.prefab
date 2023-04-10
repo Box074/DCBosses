@@ -1938,7 +1938,7 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101010101
+        actionEnabled: 0101010101010100
         actionIsOpen: 0101010101010101
         actionStartIndex: 0000000002000000080000000d00000012000000170000001d00000022000000
         actionHashCodes: 8124dc0109faa10214180903141809031418090309faa10214180903ba7ea101
@@ -9557,7 +9557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 696e7109bb262864880633b5f59f1acb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1717222574506603262}
   lastHP: 0
   hm: {fileID: 2717464080586629851}
   dream: {fileID: 4404888549130268391}
@@ -16960,15 +16960,19 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.SetFsmFloat
         - HutongGames.PlayMaker.Actions.SetFsmFloat
+        - HutongGames.PlayMaker.Actions.GetComponent
+        - HutongGames.PlayMaker.Actions.SetProperty
         customNames:
         - 
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 01010101
-        actionStartIndex: 0000000003000000050000000a000000
-        actionHashCodes: 04d814025ac852048760450287604502
+        - 
+        - 
+        actionEnabled: 010101010101
+        actionIsOpen: 010101010101
+        actionStartIndex: 0000000003000000050000000a0000000f00000012000000
+        actionHashCodes: 04d814025ac85204876045028760450204d814025ac85204
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -16996,11 +17000,151 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 706816082666369576}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams:
+        - TargetObject:
+            useVariable: 1
+            name: Animator
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: DCSpriteAnimator
+            value: {fileID: 0}
+          TargetTypeName: DCSpriteAnimator
+          PropertyName: speed
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 1.25
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: System.Single
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          EnumParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            enumName: HutongGames.PlayMaker.None
+            intValue: 0
+          ArrayParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: UnityEngine.Object
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+          setProperty: 1
         - TargetObject:
             useVariable: 1
             name: Animator
@@ -17167,6 +17311,13 @@ MonoBehaviour:
           networkSync: 0
           typeName: DCSpriteAnimator
           value: {fileID: 0}
+        - useVariable: 1
+          name: Animator
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: DCSpriteAnimator
+          value: {fileID: 0}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -17191,12 +17342,12 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 00000000
+        byteData: 000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000180000000100000024000000010000001400000012000000120000000f000000010000001400000012000000120000000f00000001000000
+        paramDataType: 14000000180000000100000024000000010000001400000012000000120000000f000000010000001400000012000000120000000f000000010000001400000018000000010000002400000001000000
         paramName:
         - gameObject
         - storeComponent
@@ -17213,8 +17364,13 @@ MonoBehaviour:
         - variableName
         - setValue
         - everyFrame
-        paramDataPos: 000000000000000000000000000000000100000001000000000000000100000000000000020000000200000002000000030000000100000003000000
-        paramByteDataSize: 000000000000000001000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000
+        - gameObject
+        - storeComponent
+        - everyFrame
+        - targetProperty
+        - everyFrame
+        paramDataPos: 0000000000000000000000000000000001000000010000000000000001000000000000000200000002000000020000000300000001000000030000000300000001000000040000000100000005000000
+        paramByteDataSize: 0000000000000000010000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000010000000000000001000000
     - name: Check
       description: 
       colorIndex: 0
